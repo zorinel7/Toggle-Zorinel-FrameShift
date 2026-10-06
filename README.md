@@ -2,6 +2,14 @@
 
 Fullscreen Playnite theme based on Toggle, prepared by Zorinel for FrameShift integration.
 
+## Original Creator
+
+The original **Toggle** theme was created by **Jono (jonosellier)**.
+
+Original project: https://github.com/jonosellier/toggle-theme-playnite
+
+This repository is a **Zorinel fork** of the original Toggle theme. The fork keeps the original appearance and core behavior while adding FrameShift integration and localization support.
+
 ## Installation
 
 The GitHub Release provides the theme as a **Playnite `.pthm` package**.
@@ -43,10 +51,11 @@ The theme includes FrameShift-related localization and follows the language sele
 
 ## Fork information
 
-Original theme: Toggle
+**Original theme:** Toggle  
+**Original creator:** Jono (jonosellier)  
+**Original repository:** https://github.com/jonosellier/toggle-theme-playnite  
+**Fork:** Zorinel
 
-Fork: Zorinel
-
-Purpose: FrameShift integration and localization support while preserving the original Toggle appearance and core behavior.
+**Purpose:** FrameShift integration and localization support while preserving the original Toggle appearance and core behavior.
 
 Repository: https://github.com/zorinel7/Toggle-Zorinel-FrameShift
