@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Nivå</sys:String>
   <sys:String x:Key="LOCProgressLabel">Förlopp:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Låst</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Svenska</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">FPS-läge</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Aktuellt läge: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Aktuellt läge: AV</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">AKTIVT</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">AV</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">AV — inaktivera gräns</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Det aktuellt valda spelet kunde inte hittas.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Det gick inte att fastställa spelets EXE-fil, så RTSS-profilen kan inte skapas.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Det gick inte att spara RTSS-gränsen för profilen:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Kontrollera att uppgiften "FrameShift RTSS Bridge" är installerad.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Det gick inte att ange RTSS-gränsen.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Kör Install-FrameShift.cmd en gång som administratör från tilläggsmappen.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Ogiltigt RTSS-profilnamn.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Spel</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Öppna Spel → Redigera → Spelåtgärder och kontrollera att Play action pekar på EXE-filen.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe saknas i Playnite-tilläggsmappen.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge returnerade ett fel:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Ogiltigt FPS-värde.</sys:String>
 </ResourceDictionary>

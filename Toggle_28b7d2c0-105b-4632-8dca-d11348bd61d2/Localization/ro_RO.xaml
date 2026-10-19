@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Nivel</sys:String>
   <sys:String x:Key="LOCProgressLabel">Progres:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Blocat</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Română</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">Mod FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Mod curent: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Mod curent: DEZACTIVAT</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">ACTIV</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">DEZACTIVAT</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">DEZACTIVAT — dezactivează limita</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Jocul selectat în acest moment nu a putut fi găsit.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Fișierul EXE al acestui joc nu a putut fi determinat, astfel încât profilul RTSS nu poate fi creat.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Limita RTSS nu a putut fi salvată pentru profilul:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Asigurați-vă că activitatea "FrameShift RTSS Bridge" este instalată.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Limita RTSS nu a putut fi setată.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Rulați o singură dată Install-FrameShift.cmd ca administrator din folderul extensiei.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Nume de profil RTSS invalid.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Joc</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Deschide Jocuri → Editare → Acțiuni joc și verifică dacă Play action indică fișierul EXE.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe lipsește din folderul extensiei Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge a returnat o eroare:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Valoare FPS invalidă.</sys:String>
 </ResourceDictionary>

@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Tase</sys:String>
   <sys:String x:Key="LOCProgressLabel">Edenemine:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Lukus</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Eesti</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">FPS-režiim</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Praegune režiim: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Praegune režiim: VÄLJAS</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">AKTIIVNE</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">VÄLJAS</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">VÄLJAS — keela piirang</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Praegu valitud mängu ei leitud.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Selle mängu EXE-faili ei õnnestunud määrata, seega ei saa RTSS-i profiili luua.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">RTSS-i piirangu salvestamine profiilile ebaõnnestus:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Veendu, et ülesanne "FrameShift RTSS Bridge" on installitud.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">RTSS-i piirangu seadmine ebaõnnestus.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Käivita Install-FrameShift.cmd üks kord administraatorina laienduse kaustast.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Vigane RTSS-i profiili nimi.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Mäng</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Ava Mängud → Redigeeri → Mängutoimingud ja veendu, et Play action viitab EXE-failile.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe puudub Playnite’i laienduse kaustast.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge tagastas vea:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Vigane FPS-väärtus.</sys:String>
 </ResourceDictionary>

@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">سطح</sys:String>
   <sys:String x:Key="LOCProgressLabel">پیشرفت:</sys:String>
   <sys:String x:Key="LOCLockedLabel">قفل شده</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">فارسی</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">حالت FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">حالت فعلی: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">حالت فعلی: خاموش</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">فعال</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">خاموش</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">خاموش — غیرفعال کردن محدودیت</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">بازی انتخاب‌شده فعلی پیدا نشد.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">فایل EXE این بازی شناسایی نشد، بنابراین امکان ایجاد پروفایل RTSS وجود ندارد.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">ذخیره محدودیت RTSS برای پروفایل انجام نشد:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">مطمئن شوید وظیفه "FrameShift RTSS Bridge" نصب شده است.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">تنظیم محدودیت RTSS انجام نشد.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">فایل Install-FrameShift.cmd را یک‌بار با دسترسی مدیر از پوشه افزونه اجرا کنید.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">نام پروفایل RTSS نامعتبر است.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">بازی</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">به بازی‌ها ← ویرایش ← اقدامات بازی بروید و مطمئن شوید Play action به فایل EXE اشاره می‌کند.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">فایل FrameShiftBridge.exe در پوشه افزونه Playnite وجود ندارد.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge خطا برگرداند:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">مقدار FPS نامعتبر است.</sys:String>
 </ResourceDictionary>

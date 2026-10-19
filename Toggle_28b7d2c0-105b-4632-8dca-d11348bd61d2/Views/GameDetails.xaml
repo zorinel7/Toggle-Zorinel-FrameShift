@@ -1303,7 +1303,7 @@
                                         </Style>
                                     </ButtonEx.Style>
                                 </ButtonEx>
-                                <!-- FrameShift: zintegrowany element rozszerzenia -->
+                                <!-- FrameShift plugin custom element (FrameShift_Playnite_Plugin); hidden when the plugin is not installed -->
                                 <ContentControl
                                     x:Name="FrameShift_FrameShift"
                                     Width="220"
@@ -1311,7 +1311,18 @@
                                     Margin="32,2,2,2"
                                     VerticalAlignment="Center"
                                     VerticalContentAlignment="Center"
-                                    HorizontalContentAlignment="Center" />
+                                    HorizontalContentAlignment="Center">
+                                    <ContentControl.Style>
+                                        <Style TargetType="ContentControl">
+                                            <Setter Property="Visibility" Value="Visible" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{PluginStatus Plugin=FrameShift_Playnite_Plugin, Status=Installed}" Value="False">
+                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </ContentControl.Style>
+                                </ContentControl>
                                 <ButtonEx
                                     x:Name="PART_ButtonOptions"
                                     Height="78"

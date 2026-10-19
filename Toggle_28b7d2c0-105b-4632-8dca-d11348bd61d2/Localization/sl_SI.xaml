@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Raven</sys:String>
   <sys:String x:Key="LOCProgressLabel">Napredek:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Zaklenjeno</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Slovenščina</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">Način FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Trenutni način: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Trenutni način: IZKLOPLJENO</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">AKTIVNO</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">IZKLOPLJENO</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">IZKLOPLJENO — onemogoči omejitev</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Trenutno izbrane igre ni bilo mogoče najti.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Izvršne datoteke EXE te igre ni bilo mogoče določiti, zato profila RTSS ni mogoče ustvariti.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Omejitve RTSS za profil ni bilo mogoče shraniti:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Prepričajte se, da je opravilo "FrameShift RTSS Bridge" nameščeno.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Omejitve RTSS ni bilo mogoče nastaviti.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Iz mape razširitve enkrat zaženite Install-FrameShift.cmd kot skrbnik.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Neveljavno ime profila RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Igra</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Odprite Igre → Uredi → Dejanja igre in se prepričajte, da Play action kaže na datoteko EXE.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe manjka v mapi razširitve Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge je vrnil napako:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Neveljavna vrednost FPS.</sys:String>
 </ResourceDictionary>

@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Уровень</sys:String>
   <sys:String x:Key="LOCProgressLabel">Прогресс:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Заблокировано</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Русский</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">Режим FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Текущий режим: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Текущий режим: ВЫКЛ.</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">АКТИВНО</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">ВЫКЛ.</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">ВЫКЛ. — отключить ограничение</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Не удалось найти текущую выбранную игру.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Не удалось определить EXE-файл этой игры, поэтому профиль RTSS создать невозможно.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Не удалось сохранить ограничение RTSS для профиля:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Убедитесь, что задача "FrameShift RTSS Bridge" установлена.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Не удалось установить ограничение RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Один раз запустите Install-FrameShift.cmd от имени администратора из папки расширения.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Недопустимое имя профиля RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Игра</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Откройте Игры → Изменить → Действия игры и убедитесь, что Play action указывает на EXE-файл.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe отсутствует в папке расширения Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge вернул ошибку:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Недопустимое значение FPS.</sys:String>
 </ResourceDictionary>

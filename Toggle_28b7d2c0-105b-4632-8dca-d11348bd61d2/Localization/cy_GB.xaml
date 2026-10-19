@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Lefel</sys:String>
   <sys:String x:Key="LOCProgressLabel">Cynnydd:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Wedi’i gloi</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Cymraeg</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">Modd FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Modd cyfredol: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Modd cyfredol: I FF</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">GWEITHREDOL</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">I FF</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">I FF — analluogi’r terfyn</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Ni ellir dod o hyd i’r gêm a ddewiswyd ar hyn o bryd.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Ni ellir pennu ffeil EXE y gêm hon, felly ni ellir creu proffil RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Methu cadw terfyn RTSS ar gyfer y proffil:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Sicrhewch fod y dasg "FrameShift RTSS Bridge" wedi’i gosod.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Methu gosod terfyn RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Rhedeg Install-FrameShift.cmd unwaith fel gweinyddwr o ffolder yr estyniad.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Enw proffil RTSS annilys.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Gêm</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Agorwch Gemau → Golygu → Camau gêm a sicrhewch fod Play action yn pwyntio at y ffeil EXE.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">Mae FrameShiftBridge.exe ar goll o ffolder estyniad Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">Dychwelodd RTSSBridge wall:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Gwerth FPS annilys.</sys:String>
 </ResourceDictionary>

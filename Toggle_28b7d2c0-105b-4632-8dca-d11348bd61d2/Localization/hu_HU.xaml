@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Szint</sys:String>
   <sys:String x:Key="LOCProgressLabel">Haladás:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Zárolva</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Magyar</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">FPS mód</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Jelenlegi mód: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Jelenlegi mód: KI</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">AKTÍV</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">KI</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">KI — korlát kikapcsolása</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">A jelenleg kiválasztott játék nem található.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">A játék EXE-fájlja nem határozható meg, ezért nem hozható létre RTSS-profil.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Nem sikerült menteni az RTSS-korlátot a profilhoz:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Győződjön meg róla, hogy a "FrameShift RTSS Bridge" feladat telepítve van.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Nem sikerült beállítani az RTSS-korlátot.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Futtassa egyszer rendszergazdaként az Install-FrameShift.cmd fájlt a bővítmény mappájából.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Érvénytelen RTSS-profilnév.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Játék</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Nyisd meg a Játékok → Szerkesztés → Játékműveletek részt, és ellenőrizd, hogy a Play action az EXE-fájlra mutat.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">A FrameShiftBridge.exe hiányzik a Playnite-bővítmény mappájából.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">Az RTSSBridge hibát adott vissza:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Érvénytelen FPS-érték.</sys:String>
 </ResourceDictionary>

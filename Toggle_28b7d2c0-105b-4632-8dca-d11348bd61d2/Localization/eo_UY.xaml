@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Nivelo</sys:String>
   <sys:String x:Key="LOCProgressLabel">Progreso:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Ŝlosita</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Esperanto</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">FPS-reĝimo</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Aktuala reĝimo: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Aktuala reĝimo: MALŜALTITA</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">AKTIVA</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">MALŜALTITA</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">MALŜALTITA — malŝalti limon</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Ne eblis trovi la nun elektitan ludon.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Ne eblis determini la EXE-dosieron de ĉi tiu ludo, do RTSS-profilo ne povas esti kreita.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Ne eblis konservi la RTSS-limon por la profilo:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Certigu, ke la tasko "FrameShift RTSS Bridge" estas instalita.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Ne eblis agordi la RTSS-limon.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Rulu Install-FrameShift.cmd unufoje kiel administranto el la dosierujo de la aldonaĵo.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Nevalida nomo de RTSS-profilo.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Ludo</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Malfermu Ludoj → Redakti → Ludaj Agoj kaj certigu, ke Play action indikas la EXE-dosieron.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe mankas el la dosierujo de la Playnite-aldonaĵo.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge redonis eraron:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Nevalida FPS-valoro.</sys:String>
 </ResourceDictionary>

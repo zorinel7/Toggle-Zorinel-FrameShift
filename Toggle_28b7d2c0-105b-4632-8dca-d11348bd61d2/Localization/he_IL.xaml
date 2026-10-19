@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">רמה</sys:String>
   <sys:String x:Key="LOCProgressLabel">התקדמות:</sys:String>
   <sys:String x:Key="LOCLockedLabel">נעול</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">עברית</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">מצב FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">מצב נוכחי: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">מצב נוכחי: כבוי</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">פעיל</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">כבוי</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">כבוי — השבתת המגבלה</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">לא ניתן למצוא את המשחק שנבחר כעת.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">לא ניתן לזהות את קובץ ה‑EXE של המשחק, ולכן לא ניתן ליצור פרופיל RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">לא ניתן לשמור את מגבלת RTSS עבור הפרופיל:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">ודא שהמשימה "FrameShift RTSS Bridge" מותקנת.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">לא ניתן להגדיר את מגבלת RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">הפעל את Install-FrameShift.cmd פעם אחת כמנהל מערכת מתיקיית התוסף.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">שם פרופיל RTSS לא חוקי.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">משחק</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">פתח משחקים ← עריכה ← פעולות משחק וודא ש‑Play action מצביע על קובץ ה‑EXE.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe חסר בתיקיית התוסף של Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge החזיר שגיאה:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">ערך FPS לא חוקי.</sys:String>
 </ResourceDictionary>

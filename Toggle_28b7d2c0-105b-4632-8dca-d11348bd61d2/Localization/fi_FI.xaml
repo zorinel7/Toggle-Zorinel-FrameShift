@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Taso</sys:String>
   <sys:String x:Key="LOCProgressLabel">Edistyminen:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Lukittu</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Suomi</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">FPS-tila</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Nykyinen tila: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Nykyinen tila: POIS</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">AKTIIVINEN</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">POIS</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">POIS — poista rajoitus</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Nykyistä valittua peliä ei löytynyt.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Pelin EXE-tiedostoa ei voitu määrittää, joten RTSS-profiilia ei voida luoda.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">RTSS-rajoituksen tallennus profiilille epäonnistui:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Varmista, että tehtävä "FrameShift RTSS Bridge" on asennettu.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">RTSS-rajoituksen asettaminen epäonnistui.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Suorita Install-FrameShift.cmd kerran järjestelmänvalvojana lisäosan kansiosta.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Virheellinen RTSS-profiilin nimi.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Peli</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Avaa Pelit → Muokkaa → Pelin toiminnot ja varmista, että Play action osoittaa EXE-tiedostoon.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe puuttuu Playnite-lisäosan kansiosta.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge palautti virheen:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Virheellinen FPS-arvo.</sys:String>
 </ResourceDictionary>

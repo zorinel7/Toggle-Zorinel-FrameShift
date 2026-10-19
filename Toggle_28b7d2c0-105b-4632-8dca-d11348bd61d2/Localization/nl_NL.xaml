@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Niveau</sys:String>
   <sys:String x:Key="LOCProgressLabel">Voortgang:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Vergrendeld</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Nederlands</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">FPS-modus</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Huidige modus: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Huidige modus: UIT</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">ACTIEF</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">UIT</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">UIT — limiet uitschakelen</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">De momenteel geselecteerde game kon niet worden gevonden.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Het EXE-bestand van deze game kon niet worden bepaald, daarom kan het RTSS-profiel niet worden aangemaakt.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">De RTSS-limiet voor profiel kon niet worden opgeslagen:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Controleer of de taak "FrameShift RTSS Bridge" is geïnstalleerd.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">De RTSS-limiet kon niet worden ingesteld.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Voer Install-FrameShift.cmd één keer uit als administrator vanuit de extensiemap.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Ongeldige RTSS-profielnaam.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Game</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Open Games → Bewerken → Gameacties en controleer of Play action naar het EXE-bestand verwijst.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe ontbreekt in de Playnite-extensiemap.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge gaf een fout terug:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Ongeldige FPS-waarde.</sys:String>
 </ResourceDictionary>

@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">レベル</sys:String>
   <sys:String x:Key="LOCProgressLabel">進行状況:</sys:String>
   <sys:String x:Key="LOCLockedLabel">ロック済み</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">日本語</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">FPSモード</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">現在のモード: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">現在のモード: オフ</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">有効</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">オフ</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">オフ — 上限を無効化</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">現在選択されているゲームが見つかりません。</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">このゲームのEXEファイルを特定できないため、RTSSプロファイルを作成できません。</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">プロファイルのRTSS上限を保存できませんでした:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">"FrameShift RTSS Bridge" タスクがインストールされていることを確認してください。</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">RTSS上限を設定できませんでした。</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">拡張機能フォルダーからInstall-FrameShift.cmdを管理者として一度実行してください。</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">RTSSプロファイル名が無効です。</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">ゲーム</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">ゲーム → 編集 → ゲームアクションを開き、Play action が EXE ファイルを指定していることを確認してください。</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">Playnite の拡張機能フォルダーに FrameShiftBridge.exe がありません。</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge がエラーを返しました:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">無効なFPS値です。</sys:String>
 </ResourceDictionary>

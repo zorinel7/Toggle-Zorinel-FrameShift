@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Nivell</sys:String>
   <sys:String x:Key="LOCProgressLabel">Progrés:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Bloquejat</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Català</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">Mode FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Mode actual: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Mode actual: DESACTIVAT</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">ACTIU</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">DESACTIVAT</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">DESACTIVAT — desactiva el límit</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">No s’ha trobat el joc seleccionat actualment.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">No s’ha pogut determinar l’EXE d’aquest joc, de manera que no es pot crear el perfil d’RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">No s’ha pogut desar el límit d’RTSS per al perfil:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Assegura’t que la tasca "FrameShift RTSS Bridge" estigui instal·lada.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">No s’ha pogut establir el límit d’RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Executa Install-FrameShift.cmd una vegada com a administrador des de la carpeta de l’extensió.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Nom de perfil d’RTSS no vàlid.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Joc</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Obre Jocs → Edita → Accions del joc i assegura’t que Play action apunti al fitxer EXE.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">Falta FrameShiftBridge.exe a la carpeta de l’extensió de Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge ha retornat un error:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Valor d’FPS no vàlid.</sys:String>
 </ResourceDictionary>

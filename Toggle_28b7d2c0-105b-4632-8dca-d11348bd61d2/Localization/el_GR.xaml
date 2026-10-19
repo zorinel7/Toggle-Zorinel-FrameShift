@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Επίπεδο</sys:String>
   <sys:String x:Key="LOCProgressLabel">Πρόοδος:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Κλειδωμένο</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Ελληνικά</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">Λειτουργία FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Τρέχουσα λειτουργία: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Τρέχουσα λειτουργία: ΑΠΕΝΕΡΓΟ</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">ΕΝΕΡΓΟ</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">ΑΠΕΝΕΡΓΟ</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">ΑΠΕΝΕΡΓΟ — απενεργοποίηση ορίου</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Δεν ήταν δυνατός ο εντοπισμός του τρέχοντος επιλεγμένου παιχνιδιού.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Δεν ήταν δυνατός ο προσδιορισμός του αρχείου EXE αυτού του παιχνιδιού, επομένως δεν μπορεί να δημιουργηθεί προφίλ RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Δεν ήταν δυνατή η αποθήκευση του ορίου RTSS για το προφίλ:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Βεβαιωθείτε ότι η εργασία "FrameShift RTSS Bridge" είναι εγκατεστημένη.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Δεν ήταν δυνατή η ρύθμιση του ορίου RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Εκτελέστε μία φορά το Install-FrameShift.cmd ως διαχειριστής από τον φάκελο της επέκτασης.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Μη έγκυρο όνομα προφίλ RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Παιχνίδι</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Άνοιξε Παιχνίδια → Επεξεργασία → Ενέργειες παιχνιδιού και βεβαιώσου ότι το Play action δείχνει στο αρχείο EXE.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">Το FrameShiftBridge.exe λείπει από τον φάκελο της επέκτασης του Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">Το RTSSBridge επέστρεψε σφάλμα:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Μη έγκυρη τιμή FPS.</sys:String>
 </ResourceDictionary>

@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Cấp độ</sys:String>
   <sys:String x:Key="LOCProgressLabel">Tiến độ:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Đã khóa</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Tiếng Việt</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">Chế độ FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Chế độ hiện tại: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Chế độ hiện tại: TẮT</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">ĐANG BẬT</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">TẮT</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">TẮT — tắt giới hạn</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Không tìm thấy trò chơi đang được chọn.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Không thể xác định tệp EXE của trò chơi này nên không thể tạo hồ sơ RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Không thể lưu giới hạn RTSS cho hồ sơ:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Hãy đảm bảo tác vụ "FrameShift RTSS Bridge" đã được cài đặt.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Không thể đặt giới hạn RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Chạy Install-FrameShift.cmd một lần với quyền quản trị viên từ thư mục tiện ích mở rộng.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Tên hồ sơ RTSS không hợp lệ.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Trò chơi</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Mở Trò chơi → Chỉnh sửa → Hành động trò chơi và đảm bảo Play action trỏ tới tệp EXE.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">Không tìm thấy FrameShiftBridge.exe trong thư mục tiện ích mở rộng Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge trả về lỗi:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Giá trị FPS không hợp lệ.</sys:String>
 </ResourceDictionary>

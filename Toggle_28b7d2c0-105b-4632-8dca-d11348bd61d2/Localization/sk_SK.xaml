@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Úroveň</sys:String>
   <sys:String x:Key="LOCProgressLabel">Pokrok:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Zamknuté</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Slovenčina</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">Režim FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Aktuálny režim: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Aktuálny režim: VYPNUTÉ</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">AKTÍVNE</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">VYPNUTÉ</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">VYPNUTÉ — vypnúť limit</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Aktuálne vybranú hru sa nepodarilo nájsť.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Nepodarilo sa určiť EXE súbor tejto hry, takže profil RTSS nemožno vytvoriť.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Limit RTSS sa pre profil nepodarilo uložiť:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Uistite sa, že úloha "FrameShift RTSS Bridge" je nainštalovaná.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Limit RTSS sa nepodarilo nastaviť.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Spustite Install-FrameShift.cmd raz ako správca z priečinka rozšírenia.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Neplatný názov profilu RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Hra</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Otvorte Hry → Upraviť → Akcie hry a uistite sa, že Play action smeruje na EXE súbor.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe chýba v priečinku rozšírenia Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge vrátil chybu:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Neplatná hodnota FPS.</sys:String>
 </ResourceDictionary>

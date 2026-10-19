@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">स्तर</sys:String>
   <sys:String x:Key="LOCProgressLabel">प्रगती:</sys:String>
   <sys:String x:Key="LOCLockedLabel">लॉक केलेले</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">मराठी</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">FPS मोड</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">सध्याचा मोड: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">सध्याचा मोड: बंद</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">सक्रिय</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">बंद</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">बंद — मर्यादा अक्षम करा</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">सध्या निवडलेला गेम सापडला नाही.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">या गेमची EXE फाइल ओळखता आली नाही, त्यामुळे RTSS प्रोफाइल तयार करता येत नाही.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">प्रोफाइलसाठी RTSS मर्यादा जतन करता आली नाही:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">"FrameShift RTSS Bridge" टास्क स्थापित असल्याची खात्री करा.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">RTSS मर्यादा सेट करता आली नाही.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">एकदा विस्ताराच्या फोल्डरमधून Install-FrameShift.cmd प्रशासक म्हणून चालवा.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">अवैध RTSS प्रोफाइल नाव.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">गेम</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">गेम → संपादित करा → गेम अॅक्शन्स उघडा आणि Play action EXE फाइलकडे निर्देश करत असल्याची खात्री करा.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">Playnite एक्स्टेंशन फोल्डरमध्ये FrameShiftBridge.exe सापडत नाही.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge ने त्रुटी परत केली:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">अवैध FPS मूल्य.</sys:String>
 </ResourceDictionary>

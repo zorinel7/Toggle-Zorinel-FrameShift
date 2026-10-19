@@ -60,25 +60,4 @@
   <sys:String x:Key="LOCLevelShort">المستوى</sys:String>
   <sys:String x:Key="LOCProgressLabel">التقدم:</sys:String>
   <sys:String x:Key="LOCLockedLabel">مقفل</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">العربية</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">وضع FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">الوضع الحالي: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">الوضع الحالي: إيقاف</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">نشط</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">إيقاف</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">إيقاف — تعطيل الحد</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">تعذر العثور على اللعبة المحددة حاليًا.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">تعذر تحديد ملف EXE الخاص بهذه اللعبة، لذلك لا يمكن إنشاء ملف تعريف RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">تعذر حفظ حد RTSS للملف الشخصي:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">تأكد من تثبيت مهمة "FrameShift RTSS Bridge".</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">تعذر تعيين حد RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">شغّل Install-FrameShift.cmd مرة واحدة كمسؤول من مجلد الإضافة.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">اسم ملف تعريف RTSS غير صالح.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">اللعبة</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">افتح الألعاب ← تحرير ← إجراءات اللعبة وتأكد من أن إجراء التشغيل يشير إلى ملف EXE.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">ملف FrameShiftBridge.exe غير موجود في مجلد إضافة Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">أعاد RTSSBridge خطأً:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">قيمة FPS غير صالحة.</sys:String>
 </ResourceDictionary>

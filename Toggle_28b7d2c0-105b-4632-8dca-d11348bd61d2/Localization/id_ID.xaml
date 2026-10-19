@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Level</sys:String>
   <sys:String x:Key="LOCProgressLabel">Progres:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Terkunci</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Bahasa Indonesia</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">Mode FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Mode saat ini: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Mode saat ini: NONAKTIF</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">AKTIF</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">NONAKTIF</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">NONAKTIF — nonaktifkan batas</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Game yang sedang dipilih tidak ditemukan.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">File EXE game ini tidak dapat ditentukan, sehingga profil RTSS tidak dapat dibuat.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Gagal menyimpan batas RTSS untuk profil:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Pastikan tugas "FrameShift RTSS Bridge" sudah terpasang.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Gagal menetapkan batas RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Jalankan Install-FrameShift.cmd sekali sebagai administrator dari folder ekstensi.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Nama profil RTSS tidak valid.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Game</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Buka Game → Edit → Game Actions dan pastikan Play action menunjuk ke file EXE.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe tidak ada di folder ekstensi Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge mengembalikan kesalahan:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Nilai FPS tidak valid.</sys:String>
 </ResourceDictionary>

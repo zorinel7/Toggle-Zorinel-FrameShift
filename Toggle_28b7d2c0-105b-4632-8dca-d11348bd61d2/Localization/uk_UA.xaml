@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Рівень</sys:String>
   <sys:String x:Key="LOCProgressLabel">Прогрес:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Заблоковано</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Українська</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">Режим FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Поточний режим: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Поточний режим: ВИМК.</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">АКТИВНО</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">ВИМК.</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">ВИМК. — вимкнути обмеження</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Не вдалося знайти поточну вибрану гру.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Не вдалося визначити EXE-файл цієї гри, тому профіль RTSS неможливо створити.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Не вдалося зберегти обмеження RTSS для профілю:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Переконайтеся, що завдання "FrameShift RTSS Bridge" встановлено.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Не вдалося встановити обмеження RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Один раз запустіть Install-FrameShift.cmd від імені адміністратора з папки розширення.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Неприпустима назва профілю RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Гра</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Відкрийте Ігри → Редагувати → Дії гри та переконайтеся, що Play action вказує на EXE-файл.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe відсутній у папці розширення Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge повернув помилку:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Неприпустиме значення FPS.</sys:String>
 </ResourceDictionary>

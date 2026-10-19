@@ -60,25 +60,4 @@
   <sys:String x:Key="LOCLevelShort">Nivel</sys:String>
   <sys:String x:Key="LOCProgressLabel">Progreso:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Bloqueado</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Español</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">Modo FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Modo actual: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Modo actual: DESACTIVADO</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">ACTIVO</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">DESACTIVADO</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">DESACTIVADO — desactivar límite</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">No se pudo encontrar el juego seleccionado actualmente.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">No se pudo determinar el archivo EXE de este juego, por lo que no se puede crear el perfil de RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">No se pudo guardar el límite de RTSS para el perfil:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Asegúrate de que la tarea "FrameShift RTSS Bridge" esté instalada.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">No se pudo establecer el límite de RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Ejecuta Install-FrameShift.cmd una vez como administrador desde la carpeta de la extensión.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Nombre de perfil de RTSS no válido.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Juego</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Abre Juegos → Editar → Acciones del juego y asegúrate de que Play action apunte al archivo EXE.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">Falta FrameShiftBridge.exe en la carpeta de la extensión de Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge devolvió un error:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Valor de FPS no válido.</sys:String>
 </ResourceDictionary>

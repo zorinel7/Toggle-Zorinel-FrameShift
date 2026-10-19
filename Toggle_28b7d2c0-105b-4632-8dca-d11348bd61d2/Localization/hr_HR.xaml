@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Razina</sys:String>
   <sys:String x:Key="LOCProgressLabel">Napredak:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Zaključano</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Hrvatski</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">FPS način</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Trenutni način: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Trenutni način: ISKLJUČENO</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">AKTIVNO</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">ISKLJUČENO</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">ISKLJUČENO — onemogući ograničenje</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Trenutno odabrana igra nije pronađena.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Nije moguće odrediti EXE datoteku ove igre pa se RTSS profil ne može izraditi.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Nije moguće spremiti RTSS ograničenje za profil:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Provjerite je li zadatak "FrameShift RTSS Bridge" instaliran.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Nije moguće postaviti RTSS ograničenje.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Jednom pokrenite Install-FrameShift.cmd kao administrator iz mape dodatka.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Nevažeći naziv RTSS profila.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Igra</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Otvorite Igre → Uredi → Radnje igre i provjerite da Play action pokazuje na EXE datoteku.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe nedostaje u mapi dodatka za Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge je vratio pogrešku:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Nevažeća vrijednost FPS-a.</sys:String>
 </ResourceDictionary>

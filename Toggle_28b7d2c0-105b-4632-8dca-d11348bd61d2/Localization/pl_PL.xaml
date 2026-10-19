@@ -84,25 +84,4 @@
   <sys:String x:Key="LOCLevelShort">POZ</sys:String>
   <sys:String x:Key="LOCProgressLabel">Postęp:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Zablokowane</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Polski</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">Tryb FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Aktualny tryb: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Aktualny tryb: WYŁ.</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">AKTYWNY</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">WYŁ.</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">WYŁ. — wyłącz limit</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Nie udało się znaleźć aktualnie wybranej gry.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Nie udało się ustalić pliku EXE tej gry, więc nie można utworzyć profilu RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Nie udało się zapisać limitu RTSS dla profilu:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Upewnij się, że zadanie "FrameShift RTSS Bridge" jest zainstalowane.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Nie udało się ustawić limitu RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Uruchom jednorazowo Install-FrameShift.cmd jako administrator z katalogu rozszerzenia.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Nieprawidłowa nazwa profilu RTSS.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Gra</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Wejdź w Gry → Edytuj → Akcje gry i upewnij się, że Play action wskazuje na plik EXE.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">Brak FrameShiftBridge.exe w katalogu rozszerzenia Playnite.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge zwrócił błąd:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Nieprawidłowa wartość FPS.</sys:String>
 </ResourceDictionary>

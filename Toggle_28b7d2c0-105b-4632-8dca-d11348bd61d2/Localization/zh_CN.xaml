@@ -59,25 +59,4 @@
   <sys:String x:Key="LOCLevelShort">等级</sys:String>
   <sys:String x:Key="LOCProgressLabel">进度：</sys:String>
   <sys:String x:Key="LOCLockedLabel">已锁定</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">简体中文</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">FPS 模式</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">当前模式：{0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">当前模式：关闭</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">已启用</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">关闭</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">关闭 — 禁用限制</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">找不到当前选中的游戏。</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">无法确定此游戏的 EXE 文件，因此无法创建 RTSS 配置文件。</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">无法保存此配置文件的 RTSS 限制：</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">请确认已安装“FrameShift RTSS Bridge”任务。</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">无法设置 RTSS 限制。</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">请在扩展程序文件夹中以管理员身份运行一次 Install-FrameShift.cmd。</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">RTSS 配置文件名称无效。</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">游戏</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">打开“游戏 → 编辑 → 游戏操作”，确保 Play action 指向 EXE 文件。</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">Playnite 扩展文件夹中缺少 FrameShiftBridge.exe。</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge 返回错误：</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">FPS 值无效。</sys:String>
 </ResourceDictionary>

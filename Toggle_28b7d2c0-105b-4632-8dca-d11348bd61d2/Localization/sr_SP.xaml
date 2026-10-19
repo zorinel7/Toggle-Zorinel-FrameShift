@@ -33,25 +33,4 @@
   <sys:String x:Key="LOCLevelShort">Nivo</sys:String>
   <sys:String x:Key="LOCProgressLabel">Napredak:</sys:String>
   <sys:String x:Key="LOCLockedLabel">Zaključano</sys:String>
-  <!-- FrameShift localization -->
-  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
-  <sys:String x:Key="LOCFrameShiftLanguageName">Српски</sys:String>
-  <sys:String x:Key="LOCFrameShiftFpsMode">FPS режим</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentMode">Тренутни режим: {0} FPS</sys:String>
-  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Тренутни режим: ИСКЉ.</sys:String>
-  <sys:String x:Key="LOCFrameShiftActive">АКТИВНО</sys:String>
-  <sys:String x:Key="LOCFrameShiftOff">ИСКЉ.</sys:String>
-  <sys:String x:Key="LOCFrameShiftOffDisable">ИСКЉ. — онемогући ограничење</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Тренутно изабрана игра није пронађена.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExe">Није могуће одредити EXE датотеку ове игре, па RTSS профил не може бити креиран.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Није могуће сачувати RTSS ограничење за профил:</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Проверите да ли је задатак "FrameShift RTSS Bridge" инсталиран.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorGlobal">Није могуће подесити RTSS ограничење.</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Једном покрените Install-FrameShift.cmd као администратор из фасцикле додатка.</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Неважећи назив RTSS профила.</sys:String>
-  <sys:String x:Key="LOCFrameShiftGame">Игра</sys:String>
-  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Отворите Игре → Измени → Радње игре и проверите да ли Play action показује на EXE датотеку.</sys:String>
-  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe недостаје у фасцикли Playnite додатка.</sys:String>
-  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge је вратио грешку:</sys:String>
-  <sys:String x:Key="LOCFrameShiftInvalidFps">Неважећа FPS вредност.</sys:String>
 </ResourceDictionary>
