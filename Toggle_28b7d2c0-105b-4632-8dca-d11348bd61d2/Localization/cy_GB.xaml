@@ -1,0 +1,57 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <sys:String x:Key="LOCThisSession">Y sesiwn hon</sys:String>
+  <sys:String x:Key="LOCStarted">Dechrau</sys:String>
+  <sys:String x:Key="LOCFreeSpace">Lle rhydd:</sys:String>
+  <sys:String x:Key="LOCManageApps">Rheoli apiau a gemau</sys:String>
+  <sys:String x:Key="LOCNowPlayingCaps">WRTH CHWARAE</sys:String>
+  <sys:String x:Key="LOCCurrentlyPlaying">Wrth chwarae</sys:String>
+  <sys:String x:Key="LOCNetworkConnectivity">Cysylltedd rhwydwaith</sys:String>
+  <sys:String x:Key="LOCStorage">Storio</sys:String>
+  <sys:String x:Key="LOCColorSky">Awyr</sys:String>
+  <sys:String x:Key="LOCColorGreen">Gwyrdd</sys:String>
+  <sys:String x:Key="LOCColorRed">Coch</sys:String>
+  <sys:String x:Key="LOCColorBlue">Glas</sys:String>
+  <sys:String x:Key="LOCColorYellow">Melyn</sys:String>
+  <sys:String x:Key="LOCColorPurple">Porffor</sys:String>
+  <sys:String x:Key="LOCColorPink">Pinc</sys:String>
+  <sys:String x:Key="LOCColorIndigo">Indigo</sys:String>
+  <sys:String x:Key="LOCColorTeal">Turquoiȝ</sys:String>
+  <sys:String x:Key="LOCColorCyan">Cyan</sys:String>
+  <sys:String x:Key="LOCColorOrange">Oren</sys:String>
+  <sys:String x:Key="LOCColorAmber">Ambr</sys:String>
+  <sys:String x:Key="LOCColorLime">Lima</sys:String>
+  <sys:String x:Key="LOCColorEmerald">Emrallt</sys:String>
+  <sys:String x:Key="LOCColorViolet">Fioled</sys:String>
+  <sys:String x:Key="LOCColorFuchsia">Fuchsia</sys:String>
+  <sys:String x:Key="LOCColorRose">Rhosyn</sys:String>
+  <sys:String x:Key="LOCColorSlate">Llechen</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">Platinwm</sys:String>
+  <sys:String x:Key="LOCZoomCovers">Chwyddo cloriau gemau wrth ffocws</sys:String>
+  <sys:String x:Key="LOCLevelShort">Lefel</sys:String>
+  <sys:String x:Key="LOCProgressLabel">Cynnydd:</sys:String>
+  <sys:String x:Key="LOCLockedLabel">Wedi’i gloi</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">Cymraeg</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">Modd FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">Modd cyfredol: {0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Modd cyfredol: I FF</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">GWEITHREDOL</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">I FF</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">I FF — analluogi’r terfyn</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Ni ellir dod o hyd i’r gêm a ddewiswyd ar hyn o bryd.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">Ni ellir pennu ffeil EXE y gêm hon, felly ni ellir creu proffil RTSS.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Methu cadw terfyn RTSS ar gyfer y proffil:</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Sicrhewch fod y dasg "FrameShift RTSS Bridge" wedi’i gosod.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">Methu gosod terfyn RTSS.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Rhedeg Install-FrameShift.cmd unwaith fel gweinyddwr o ffolder yr estyniad.</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Enw proffil RTSS annilys.</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">Gêm</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Agorwch Gemau → Golygu → Camau gêm a sicrhewch fod Play action yn pwyntio at y ffeil EXE.</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">Mae FrameShiftBridge.exe ar goll o ffolder estyniad Playnite.</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">Dychwelodd RTSSBridge wall:</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">Gwerth FPS annilys.</sys:String>
+</ResourceDictionary>

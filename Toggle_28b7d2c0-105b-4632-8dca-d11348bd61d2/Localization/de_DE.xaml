@@ -1,0 +1,84 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <!--  This Session  -->
+  <sys:String x:Key="LOCThisSession">Diese Sitzung</sys:String>
+  <!--  Started  -->
+  <sys:String x:Key="LOCStarted">Gestartet</sys:String>
+  <!--  Free Space:  -->
+  <sys:String x:Key="LOCFreeSpace">Freier Speicher:</sys:String>
+  <!--  Manage Apps and Games  -->
+  <sys:String x:Key="LOCManageApps">Apps und Spiele Verwalten</sys:String>
+  <!--  NOW PLAYING  -->
+  <sys:String x:Key="LOCNowPlayingCaps">WIRD WIEDERGEGEBEN</sys:String>
+  <!--  Currently Playing  -->
+  <sys:String x:Key="LOCCurrentlyPlaying">Wird Wiedergegeben</sys:String>
+  <!--  Network Connectivity  -->
+  <sys:String x:Key="LOCNetworkConnectivity">Netzwerkverbindung</sys:String>
+  <!--  Storage  -->
+  <sys:String x:Key="LOCStorage">Speicher</sys:String>
+  <!--  Sky  -->
+  <sys:String x:Key="LOCColorSky">Himmel</sys:String>
+  <!--  Green  -->
+  <sys:String x:Key="LOCColorGreen">Grün</sys:String>
+  <!--  Red  -->
+  <sys:String x:Key="LOCColorRed">Rot</sys:String>
+  <!--  Blue  -->
+  <sys:String x:Key="LOCColorBlue">Blau</sys:String>
+  <!--  Yellow  -->
+  <sys:String x:Key="LOCColorYellow">Gelb</sys:String>
+  <!--  Purple  -->
+  <sys:String x:Key="LOCColorPurple">Lila</sys:String>
+  <!--  Pink  -->
+  <sys:String x:Key="LOCColorPink">Rosa</sys:String>
+  <!--  Indigo  -->
+  <sys:String x:Key="LOCColorIndigo">Indigo</sys:String>
+  <!--  Teal  -->
+  <sys:String x:Key="LOCColorTeal">Türkis</sys:String>
+  <!--  Cyan  -->
+  <sys:String x:Key="LOCColorCyan">Cyan</sys:String>
+  <!--  Orange  -->
+  <sys:String x:Key="LOCColorOrange">Orange</sys:String>
+  <!--  Amber  -->
+  <sys:String x:Key="LOCColorAmber">Bernstein</sys:String>
+  <!--  Lime  -->
+  <sys:String x:Key="LOCColorLime">Limette</sys:String>
+  <!--  Emerald  -->
+  <sys:String x:Key="LOCColorEmerald">Smaragd</sys:String>
+  <!--  Violet  -->
+  <sys:String x:Key="LOCColorViolet">Violett</sys:String>
+  <!--  Fuchsia  -->
+  <sys:String x:Key="LOCColorFuchsia">Fuchsia</sys:String>
+  <!--  Rose  -->
+  <sys:String x:Key="LOCColorRose">Rose</sys:String>
+  <!--  Slate  -->
+  <sys:String x:Key="LOCColorSlate">Schiefer</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">Platin</sys:String>
+
+  <sys:String x:Key="LOCZoomCovers">Spielcover beim Fokus vergrößern</sys:String>
+  <sys:String x:Key="LOCLevelShort">Stufe</sys:String>
+  <sys:String x:Key="LOCProgressLabel">Fortschritt:</sys:String>
+  <sys:String x:Key="LOCLockedLabel">Gesperrt</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">Deutsch</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">FPS-Modus</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">Aktueller Modus: {0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Aktueller Modus: AUS</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">AKTIV</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">AUS</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">AUS — Limit deaktivieren</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Das aktuell ausgewählte Spiel konnte nicht gefunden werden.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">Die EXE-Datei dieses Spiels konnte nicht ermittelt werden, daher kann kein RTSS-Profil erstellt werden.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Das RTSS-Limit konnte für dieses Profil nicht gespeichert werden:</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Stelle sicher, dass die Aufgabe "FrameShift RTSS Bridge" installiert ist.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">Das RTSS-Limit konnte nicht gesetzt werden.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Führe Install-FrameShift.cmd einmal als Administrator aus dem Erweiterungsordner aus.</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Ungültiger RTSS-Profilname.</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">Spiel</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Öffne Spiele → Bearbeiten → Spielaktionen und stelle sicher, dass Play action auf die EXE-Datei zeigt.</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe fehlt im Playnite-Erweiterungsordner.</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge hat einen Fehler zurückgegeben:</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">Ungültiger FPS-Wert.</sys:String>
+</ResourceDictionary>

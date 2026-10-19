@@ -1,0 +1,57 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <sys:String x:Key="LOCThisSession">Aquesta sessió</sys:String>
+  <sys:String x:Key="LOCStarted">Iniciat</sys:String>
+  <sys:String x:Key="LOCFreeSpace">Espai lliure:</sys:String>
+  <sys:String x:Key="LOCManageApps">Gestiona aplicacions i jocs</sys:String>
+  <sys:String x:Key="LOCNowPlayingCaps">EN REPRODUCCIÓ</sys:String>
+  <sys:String x:Key="LOCCurrentlyPlaying">Actualment en joc</sys:String>
+  <sys:String x:Key="LOCNetworkConnectivity">Connexió de xarxa</sys:String>
+  <sys:String x:Key="LOCStorage">Emmagatzematge</sys:String>
+  <sys:String x:Key="LOCColorSky">Cel</sys:String>
+  <sys:String x:Key="LOCColorGreen">Verd</sys:String>
+  <sys:String x:Key="LOCColorRed">Vermell</sys:String>
+  <sys:String x:Key="LOCColorBlue">Blau</sys:String>
+  <sys:String x:Key="LOCColorYellow">Groc</sys:String>
+  <sys:String x:Key="LOCColorPurple">Porpra</sys:String>
+  <sys:String x:Key="LOCColorPink">Rosa</sys:String>
+  <sys:String x:Key="LOCColorIndigo">Índigo</sys:String>
+  <sys:String x:Key="LOCColorTeal">Turquesa</sys:String>
+  <sys:String x:Key="LOCColorCyan">Cian</sys:String>
+  <sys:String x:Key="LOCColorOrange">Taronja</sys:String>
+  <sys:String x:Key="LOCColorAmber">Ambre</sys:String>
+  <sys:String x:Key="LOCColorLime">Lima</sys:String>
+  <sys:String x:Key="LOCColorEmerald">Maragda</sys:String>
+  <sys:String x:Key="LOCColorViolet">Violeta</sys:String>
+  <sys:String x:Key="LOCColorFuchsia">Fúcsia</sys:String>
+  <sys:String x:Key="LOCColorRose">Rosa</sys:String>
+  <sys:String x:Key="LOCColorSlate">Pissarra</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">Platí</sys:String>
+  <sys:String x:Key="LOCZoomCovers">Amplia les portades dels jocs quan tenen el focus</sys:String>
+  <sys:String x:Key="LOCLevelShort">Nivell</sys:String>
+  <sys:String x:Key="LOCProgressLabel">Progrés:</sys:String>
+  <sys:String x:Key="LOCLockedLabel">Bloquejat</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">Català</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">Mode FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">Mode actual: {0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Mode actual: DESACTIVAT</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">ACTIU</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">DESACTIVAT</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">DESACTIVAT — desactiva el límit</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">No s’ha trobat el joc seleccionat actualment.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">No s’ha pogut determinar l’EXE d’aquest joc, de manera que no es pot crear el perfil d’RTSS.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">No s’ha pogut desar el límit d’RTSS per al perfil:</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Assegura’t que la tasca "FrameShift RTSS Bridge" estigui instal·lada.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">No s’ha pogut establir el límit d’RTSS.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Executa Install-FrameShift.cmd una vegada com a administrador des de la carpeta de l’extensió.</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Nom de perfil d’RTSS no vàlid.</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">Joc</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Obre Jocs → Edita → Accions del joc i assegura’t que Play action apunti al fitxer EXE.</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">Falta FrameShiftBridge.exe a la carpeta de l’extensió de Playnite.</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge ha retornat un error:</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">Valor d’FPS no vàlid.</sys:String>
+</ResourceDictionary>

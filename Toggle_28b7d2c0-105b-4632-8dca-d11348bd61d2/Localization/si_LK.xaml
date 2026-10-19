@@ -1,0 +1,57 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <sys:String x:Key="LOCThisSession">මෙම සැසිය</sys:String>
+  <sys:String x:Key="LOCStarted">ආරම්භ විය</sys:String>
+  <sys:String x:Key="LOCFreeSpace">හිස් ඉඩ:</sys:String>
+  <sys:String x:Key="LOCManageApps">යෙදුම් සහ ක්‍රීඩා කළමනාකරණය</sys:String>
+  <sys:String x:Key="LOCNowPlayingCaps">දැන් ක්‍රීඩා කරයි</sys:String>
+  <sys:String x:Key="LOCCurrentlyPlaying">දැනට ක්‍රීඩා කරමින්</sys:String>
+  <sys:String x:Key="LOCNetworkConnectivity">ජාල සම්බන්ධතාව</sys:String>
+  <sys:String x:Key="LOCStorage">ගබඩාව</sys:String>
+  <sys:String x:Key="LOCColorSky">අහස් නිල්</sys:String>
+  <sys:String x:Key="LOCColorGreen">කොළ</sys:String>
+  <sys:String x:Key="LOCColorRed">රතු</sys:String>
+  <sys:String x:Key="LOCColorBlue">නිල්</sys:String>
+  <sys:String x:Key="LOCColorYellow">කහ</sys:String>
+  <sys:String x:Key="LOCColorPurple">දම්</sys:String>
+  <sys:String x:Key="LOCColorPink">රෝස</sys:String>
+  <sys:String x:Key="LOCColorIndigo">ඉන්ඩිගෝ</sys:String>
+  <sys:String x:Key="LOCColorTeal">ටර්කොයිස්</sys:String>
+  <sys:String x:Key="LOCColorCyan">සියාන්</sys:String>
+  <sys:String x:Key="LOCColorOrange">තැඹිලි</sys:String>
+  <sys:String x:Key="LOCColorAmber">ඇම්බර්</sys:String>
+  <sys:String x:Key="LOCColorLime">ලයිම්</sys:String>
+  <sys:String x:Key="LOCColorEmerald">එමරල්ඩ්</sys:String>
+  <sys:String x:Key="LOCColorViolet">වයලට්</sys:String>
+  <sys:String x:Key="LOCColorFuchsia">ෆුක්සියා</sys:String>
+  <sys:String x:Key="LOCColorRose">රෝස්</sys:String>
+  <sys:String x:Key="LOCColorSlate">ස්ලේට්</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">ප්ලැටිනම්</sys:String>
+  <sys:String x:Key="LOCZoomCovers">ෆෝකස් කළ විට ක්‍රීඩා කවර විශාල කරන්න</sys:String>
+  <sys:String x:Key="LOCLevelShort">මට්ටම</sys:String>
+  <sys:String x:Key="LOCProgressLabel">ප්‍රගතිය:</sys:String>
+  <sys:String x:Key="LOCLockedLabel">අගුළු දමා ඇත</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">සිංහල</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">FPS මාදිලිය</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">වත්මන් මාදිලිය: {0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">වත්මන් මාදිලිය: අක්‍රියයි</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">සක්‍රීයයි</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">අක්‍රියයි</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">අක්‍රියයි — සීමාව අක්‍රීය කරන්න</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">දැනට තෝරා ඇති ක්‍රීඩාව සොයාගත නොහැකි විය.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">මෙම ක්‍රීඩාවේ EXE ගොනුව හඳුනාගත නොහැකි වූ බැවින් RTSS පැතිකඩක් නිර්මාණය කළ නොහැක.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">පැතිකඩ සඳහා RTSS සීමාව සුරැකිය නොහැකි විය:</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">"FrameShift RTSS Bridge" කාර්යය ස්ථාපනය කර ඇති බව තහවුරු කරන්න.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">RTSS සීමාව සැකසිය නොහැකි විය.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">ප්ලගිනයේ ෆෝල්ඩරයෙන් Install-FrameShift.cmd ගොනුව පරිපාලක ලෙස එක් වරක් ධාවනය කරන්න.</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">වලංගු නොවන RTSS පැතිකඩ නාමයක්.</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">ක්‍රීඩාව</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">ක්‍රීඩා → සංස්කරණය → ක්‍රීඩා ක්‍රියා විවෘත කර Play action EXE ගොනුවට යොමු වන බව තහවුරු කරන්න.</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">Playnite ප්ලගිනයේ ෆෝල්ඩරයේ FrameShiftBridge.exe නොමැත.</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge දෝෂයක් ලබා දුන්නේය:</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">වලංගු නොවන FPS අගයක්.</sys:String>
+</ResourceDictionary>

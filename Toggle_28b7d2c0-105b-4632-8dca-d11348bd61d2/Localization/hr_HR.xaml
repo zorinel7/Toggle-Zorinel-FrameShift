@@ -1,0 +1,57 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <sys:String x:Key="LOCThisSession">Ova sesija</sys:String>
+  <sys:String x:Key="LOCStarted">Pokrenuto</sys:String>
+  <sys:String x:Key="LOCFreeSpace">Slobodan prostor:</sys:String>
+  <sys:String x:Key="LOCManageApps">Upravljanje aplikacijama i igrama</sys:String>
+  <sys:String x:Key="LOCNowPlayingCaps">TRENUTNO IGRA</sys:String>
+  <sys:String x:Key="LOCCurrentlyPlaying">Trenutno se igra</sys:String>
+  <sys:String x:Key="LOCNetworkConnectivity">Mrežna povezanost</sys:String>
+  <sys:String x:Key="LOCStorage">Pohrana</sys:String>
+  <sys:String x:Key="LOCColorSky">Nebeska</sys:String>
+  <sys:String x:Key="LOCColorGreen">Zelena</sys:String>
+  <sys:String x:Key="LOCColorRed">Crvena</sys:String>
+  <sys:String x:Key="LOCColorBlue">Plava</sys:String>
+  <sys:String x:Key="LOCColorYellow">Žuta</sys:String>
+  <sys:String x:Key="LOCColorPurple">Ljubičasta</sys:String>
+  <sys:String x:Key="LOCColorPink">Ružičasta</sys:String>
+  <sys:String x:Key="LOCColorIndigo">Indigo</sys:String>
+  <sys:String x:Key="LOCColorTeal">Tirkizna</sys:String>
+  <sys:String x:Key="LOCColorCyan">Cijan</sys:String>
+  <sys:String x:Key="LOCColorOrange">Narančasta</sys:String>
+  <sys:String x:Key="LOCColorAmber">Jantarna</sys:String>
+  <sys:String x:Key="LOCColorLime">Limeta</sys:String>
+  <sys:String x:Key="LOCColorEmerald">Smaragdna</sys:String>
+  <sys:String x:Key="LOCColorViolet">Violetna</sys:String>
+  <sys:String x:Key="LOCColorFuchsia">Fuksija</sys:String>
+  <sys:String x:Key="LOCColorRose">Ruža</sys:String>
+  <sys:String x:Key="LOCColorSlate">Škriljevac</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">Platinasta</sys:String>
+  <sys:String x:Key="LOCZoomCovers">Povećaj omote igara pri fokusu</sys:String>
+  <sys:String x:Key="LOCLevelShort">Razina</sys:String>
+  <sys:String x:Key="LOCProgressLabel">Napredak:</sys:String>
+  <sys:String x:Key="LOCLockedLabel">Zaključano</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">Hrvatski</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">FPS način</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">Trenutni način: {0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Trenutni način: ISKLJUČENO</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">AKTIVNO</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">ISKLJUČENO</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">ISKLJUČENO — onemogući ograničenje</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Trenutno odabrana igra nije pronađena.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">Nije moguće odrediti EXE datoteku ove igre pa se RTSS profil ne može izraditi.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Nije moguće spremiti RTSS ograničenje za profil:</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Provjerite je li zadatak "FrameShift RTSS Bridge" instaliran.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">Nije moguće postaviti RTSS ograničenje.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Jednom pokrenite Install-FrameShift.cmd kao administrator iz mape dodatka.</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Nevažeći naziv RTSS profila.</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">Igra</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Otvorite Igre → Uredi → Radnje igre i provjerite da Play action pokazuje na EXE datoteku.</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe nedostaje u mapi dodatka za Playnite.</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge je vratio pogrešku:</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">Nevažeća vrijednost FPS-a.</sys:String>
+</ResourceDictionary>

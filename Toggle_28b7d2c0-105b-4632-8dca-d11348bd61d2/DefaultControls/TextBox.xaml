@@ -1,0 +1,60 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="TextBox">
+        <Setter Property="KeyboardNavigation.TabNavigation" Value="None" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Background" Value="{DynamicResource ControlBackgroundBrush}" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="Padding" Value="24,16,24,16" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="FontSize" Value="48" />
+        <Setter Property="FontFamily" Value="{DynamicResource FontDefault}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <Grid Background="{TemplateBinding Background}">
+                        <ScrollViewer
+                            x:Name="PART_ContentHost"
+                            HorizontalScrollBarVisibility="{TemplateBinding HorizontalScrollBarVisibility}"
+                            VerticalScrollBarVisibility="{TemplateBinding VerticalScrollBarVisibility}" />
+
+                        <Border
+                            x:Name="BorderStandard"
+                            Margin="-2"
+                            Padding="8"
+                            BorderBrush="{DynamicResource SelectionLightBrush}"
+                            BorderThickness="2"
+                            CornerRadius="8" />
+
+                        <Border
+                            x:Name="BorderFocus"
+                            Margin="-3"
+                            Padding="8"
+                            BorderBrush="{DynamicResource PrimaryBrush}"
+                            BorderThickness="3"
+                            CornerRadius="8"
+                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                            Visibility="Hidden" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Opacity" Value="0.5" />
+                        </Trigger>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource ControlBackgroundDarkBrush}" />
+                            <Setter TargetName="BorderFocus" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="BorderStandard" Property="Visibility" Value="Hidden" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource ControlBackgroundDarkBrush}" />
+                            <Setter TargetName="BorderFocus" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="BorderStandard" Property="Visibility" Value="Hidden" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

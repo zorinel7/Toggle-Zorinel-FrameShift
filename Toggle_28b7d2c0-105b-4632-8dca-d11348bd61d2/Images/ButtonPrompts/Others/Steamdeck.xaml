@@ -1,0 +1,16 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:pmrk="clr-namespace:Playnite.FullscreenApp.Markup;assembly=Playnite.FullscreenApp">
+    <DataTemplate x:Key="ButtonPromptBack">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Steamdeck/ButtonPromptBack.png'}" />
+        </Viewbox>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ButtonPromptStart">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Steamdeck/ButtonPromptStart.png'}" />
+        </Viewbox>
+    </DataTemplate>
+</ResourceDictionary>

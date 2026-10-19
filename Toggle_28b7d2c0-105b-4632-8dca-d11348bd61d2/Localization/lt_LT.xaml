@@ -1,0 +1,57 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <sys:String x:Key="LOCThisSession">Ši sesija</sys:String>
+  <sys:String x:Key="LOCStarted">Paleista</sys:String>
+  <sys:String x:Key="LOCFreeSpace">Laisva vieta:</sys:String>
+  <sys:String x:Key="LOCManageApps">Tvarkyti programas ir žaidimus</sys:String>
+  <sys:String x:Key="LOCNowPlayingCaps">DABAR ŽAIDŽIAMA</sys:String>
+  <sys:String x:Key="LOCCurrentlyPlaying">Šiuo metu žaidžiama</sys:String>
+  <sys:String x:Key="LOCNetworkConnectivity">Tinklo ryšys</sys:String>
+  <sys:String x:Key="LOCStorage">Saugykla</sys:String>
+  <sys:String x:Key="LOCColorSky">Dangaus mėlyna</sys:String>
+  <sys:String x:Key="LOCColorGreen">Žalia</sys:String>
+  <sys:String x:Key="LOCColorRed">Raudona</sys:String>
+  <sys:String x:Key="LOCColorBlue">Mėlyna</sys:String>
+  <sys:String x:Key="LOCColorYellow">Geltona</sys:String>
+  <sys:String x:Key="LOCColorPurple">Violetinė</sys:String>
+  <sys:String x:Key="LOCColorPink">Rožinė</sys:String>
+  <sys:String x:Key="LOCColorIndigo">Indigo</sys:String>
+  <sys:String x:Key="LOCColorTeal">Turkio</sys:String>
+  <sys:String x:Key="LOCColorCyan">Žydra</sys:String>
+  <sys:String x:Key="LOCColorOrange">Oranžinė</sys:String>
+  <sys:String x:Key="LOCColorAmber">Gintaro</sys:String>
+  <sys:String x:Key="LOCColorLime">Laimo</sys:String>
+  <sys:String x:Key="LOCColorEmerald">Smaragdinė</sys:String>
+  <sys:String x:Key="LOCColorViolet">Violetinė</sys:String>
+  <sys:String x:Key="LOCColorFuchsia">Fuksijos</sys:String>
+  <sys:String x:Key="LOCColorRose">Rožinė</sys:String>
+  <sys:String x:Key="LOCColorSlate">Šiferio</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">Platina</sys:String>
+  <sys:String x:Key="LOCZoomCovers">Padidinti žaidimų viršelius pasirinkus</sys:String>
+  <sys:String x:Key="LOCLevelShort">Lygis</sys:String>
+  <sys:String x:Key="LOCProgressLabel">Pažanga:</sys:String>
+  <sys:String x:Key="LOCLockedLabel">Užrakinta</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">Lietuvių</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">FPS režimas</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">Dabartinis režimas: {0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Dabartinis režimas: IŠJUNGTA</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">AKTYVU</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">IŠJUNGTA</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">IŠJUNGTA — išjungti ribojimą</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Nepavyko rasti šiuo metu pasirinkto žaidimo.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">Nepavyko nustatyti šio žaidimo EXE failo, todėl RTSS profilio sukurti negalima.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Nepavyko išsaugoti RTSS ribos profiliui:</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Įsitikinkite, kad užduotis "FrameShift RTSS Bridge" yra įdiegta.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">Nepavyko nustatyti RTSS ribos.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Vieną kartą paleiskite Install-FrameShift.cmd kaip administratorius iš plėtinio aplanko.</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Neteisingas RTSS profilio pavadinimas.</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">Žaidimas</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Atidarykite Žaidimai → Redaguoti → Žaidimo veiksmai ir įsitikinkite, kad Play action nurodo EXE failą.</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">Playnite plėtinio aplanke nėra FrameShiftBridge.exe.</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge grąžino klaidą:</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">Neteisinga FPS reikšmė.</sys:String>
+</ResourceDictionary>

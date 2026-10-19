@@ -1,0 +1,76 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:pmrk="clr-namespace:Playnite.FullscreenApp.Markup;assembly=Playnite.FullscreenApp">
+    <DataTemplate x:Key="ButtonPromptA">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Xbox/ButtonPromptA.png'}" />
+        </Viewbox>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ButtonPromptB">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Xbox/ButtonPromptB.png'}" />
+        </Viewbox>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ButtonPromptX">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Xbox/ButtonPromptX.png'}" />
+        </Viewbox>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ButtonPromptY">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Xbox/ButtonPromptY.png'}" />
+        </Viewbox>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ButtonPromptLB">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Xbox/ButtonPromptLB.png'}" />
+        </Viewbox>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ButtonPromptRB">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Xbox/ButtonPromptRB.png'}" />
+        </Viewbox>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ButtonPromptLT">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Xbox/ButtonPromptLT.png'}" />
+        </Viewbox>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ButtonPromptRT">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Xbox/ButtonPromptRT.png'}" />
+        </Viewbox>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ButtonPromptBack">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Xbox/ButtonPromptBack.png'}" />
+        </Viewbox>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ButtonPromptStart">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Xbox/ButtonPromptStart.png'}" />
+        </Viewbox>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ButtonPromptLS">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Xbox/ButtonPromptLS.png'}" />
+        </Viewbox>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ButtonPromptRS">
+        <Viewbox>
+            <Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Xbox/ButtonPromptRS.png'}" />
+        </Viewbox>
+    </DataTemplate>
+</ResourceDictionary>

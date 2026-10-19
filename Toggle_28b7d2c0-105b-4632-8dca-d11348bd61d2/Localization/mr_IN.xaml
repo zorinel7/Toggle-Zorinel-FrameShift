@@ -1,0 +1,57 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <sys:String x:Key="LOCThisSession">हे सत्र</sys:String>
+  <sys:String x:Key="LOCStarted">सुरू झाले</sys:String>
+  <sys:String x:Key="LOCFreeSpace">मोकळी जागा:</sys:String>
+  <sys:String x:Key="LOCManageApps">अ‍ॅप्स आणि गेम्स व्यवस्थापित करा</sys:String>
+  <sys:String x:Key="LOCNowPlayingCaps">सध्या खेळत आहे</sys:String>
+  <sys:String x:Key="LOCCurrentlyPlaying">सध्या खेळत आहे</sys:String>
+  <sys:String x:Key="LOCNetworkConnectivity">नेटवर्क कनेक्टिव्हिटी</sys:String>
+  <sys:String x:Key="LOCStorage">संचयन</sys:String>
+  <sys:String x:Key="LOCColorSky">आकाशी</sys:String>
+  <sys:String x:Key="LOCColorGreen">हिरवा</sys:String>
+  <sys:String x:Key="LOCColorRed">लाल</sys:String>
+  <sys:String x:Key="LOCColorBlue">निळा</sys:String>
+  <sys:String x:Key="LOCColorYellow">पिवळा</sys:String>
+  <sys:String x:Key="LOCColorPurple">जांभळा</sys:String>
+  <sys:String x:Key="LOCColorPink">गुलाबी</sys:String>
+  <sys:String x:Key="LOCColorIndigo">इंडिगो</sys:String>
+  <sys:String x:Key="LOCColorTeal">फिरोजी</sys:String>
+  <sys:String x:Key="LOCColorCyan">सायन</sys:String>
+  <sys:String x:Key="LOCColorOrange">नारिंगी</sys:String>
+  <sys:String x:Key="LOCColorAmber">अंबर</sys:String>
+  <sys:String x:Key="LOCColorLime">लिंबू</sys:String>
+  <sys:String x:Key="LOCColorEmerald">पाचू</sys:String>
+  <sys:String x:Key="LOCColorViolet">व्हायोलेट</sys:String>
+  <sys:String x:Key="LOCColorFuchsia">फ्युशिया</sys:String>
+  <sys:String x:Key="LOCColorRose">गुलाब</sys:String>
+  <sys:String x:Key="LOCColorSlate">स्लेट</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">प्लॅटिनम</sys:String>
+  <sys:String x:Key="LOCZoomCovers">फोकस केल्यावर गेम कव्हर्स मोठे करा</sys:String>
+  <sys:String x:Key="LOCLevelShort">स्तर</sys:String>
+  <sys:String x:Key="LOCProgressLabel">प्रगती:</sys:String>
+  <sys:String x:Key="LOCLockedLabel">लॉक केलेले</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">मराठी</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">FPS मोड</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">सध्याचा मोड: {0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">सध्याचा मोड: बंद</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">सक्रिय</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">बंद</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">बंद — मर्यादा अक्षम करा</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">सध्या निवडलेला गेम सापडला नाही.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">या गेमची EXE फाइल ओळखता आली नाही, त्यामुळे RTSS प्रोफाइल तयार करता येत नाही.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">प्रोफाइलसाठी RTSS मर्यादा जतन करता आली नाही:</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">"FrameShift RTSS Bridge" टास्क स्थापित असल्याची खात्री करा.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">RTSS मर्यादा सेट करता आली नाही.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">एकदा विस्ताराच्या फोल्डरमधून Install-FrameShift.cmd प्रशासक म्हणून चालवा.</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">अवैध RTSS प्रोफाइल नाव.</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">गेम</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">गेम → संपादित करा → गेम अॅक्शन्स उघडा आणि Play action EXE फाइलकडे निर्देश करत असल्याची खात्री करा.</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">Playnite एक्स्टेंशन फोल्डरमध्ये FrameShiftBridge.exe सापडत नाही.</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge ने त्रुटी परत केली:</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">अवैध FPS मूल्य.</sys:String>
+</ResourceDictionary>

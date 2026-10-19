@@ -1,0 +1,478 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Style x:Key="ListGameItemTemplate" TargetType="{x:Type GameListItem}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type GameListItem}">
+                    <Grid>
+                        <Border
+                            x:Name="Mask"
+                            Background="Black"
+                            BorderThickness="0"
+                            CornerRadius="16" />
+                        <Image
+                            x:Name="PART_ImageCover"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            RenderOptions.BitmapScalingMode="Fant"
+                            Stretch="{Settings CoverArtStretch}"
+                            StretchDirection="Both">
+                            <Image.Style>
+                                <Style TargetType="Image">
+                                    <!--  Platform-based colors  -->
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{PluginSettings Plugin=ThemeOptions, Path=Options[Banners]}" Value="True">
+                                            <Setter Property="Margin" Value="4" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                        <Border x:Name="BorderDarken" Visibility="Collapsed">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,0.4">
+                                    <GradientStop Offset="0" Color="#A0000000" />
+                                    <GradientStop Offset="1" Color="#0F000000" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <TextBlock
+                                Margin="12"
+                                HorizontalAlignment="Right"
+                                FontSize="48"
+                                Style="{StaticResource FluentIconStyle}"
+                                Text="&#xebd3;">
+                                <TextBlock.Effect>
+                                    <DropShadowEffect
+                                        BlurRadius="10"
+                                        Direction="315"
+                                        Opacity="0.5"
+                                        ShadowDepth="0"
+                                        Color="Black" />
+                                </TextBlock.Effect>
+                            </TextBlock>
+                        </Border>
+                        <Border
+                            x:Name="BorderPlatform"
+                            Background="Transparent"
+                            BorderThickness="4"
+                            CornerRadius="16">
+
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <!--  Platform-based colors  -->
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{PluginSettings Plugin=ThemeOptions, Path=Options[Banners]}" Value="False">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                        </DataTrigger>
+                                        <!--  Platforms  -->
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Commodore Amiga">
+                                            <Setter Property="BorderBrush" Value="#FF6B6B" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Game Boy Advance">
+                                            <Setter Property="BorderBrush" Value="#8E24AA" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Gba">
+                                            <Setter Property="BorderBrush" Value="#8E24AA" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Game Boy Color">
+                                            <Setter Property="BorderBrush" Value="#FFD54F" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Game Boy Colour">
+                                            <Setter Property="BorderBrush" Value="#FFD54F" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Gameboy Colour">
+                                            <Setter Property="BorderBrush" Value="#FFD54F" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Gbc">
+                                            <Setter Property="BorderBrush" Value="#FFD54F" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Game Boy">
+                                            <Setter Property="BorderBrush" Value="#CCCCCC" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Gameboy">
+                                            <Setter Property="BorderBrush" Value="#CCCCCC" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Gamecube">
+                                            <Setter Property="BorderBrush" Value="#9C4DCC" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Nintendo Gamecube">
+                                            <Setter Property="BorderBrush" Value="#9C4DCC" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="N3ds">
+                                            <Setter Property="BorderBrush" Value="#E53935" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Nintendo 3ds">
+                                            <Setter Property="BorderBrush" Value="#E53935" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="N64">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Nintendo 64">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Nds">
+                                            <Setter Property="BorderBrush" Value="#607D8B" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Nintendo Ds">
+                                            <Setter Property="BorderBrush" Value="#607D8B" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Neo Geo">
+                                            <Setter Property="BorderBrush" Value="#FFD600" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Neo•Geo">
+                                            <Setter Property="BorderBrush" Value="#FFD600" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Nes">
+                                            <Setter Property="BorderBrush" Value="#F44336" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Nintendo Entertainment System">
+                                            <Setter Property="BorderBrush" Value="#F44336" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Nintendo Switch">
+                                            <Setter Property="BorderBrush" Value="#E60012" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Switch">
+                                            <Setter Property="BorderBrush" Value="#E60012" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Nintendo Wii U">
+                                            <Setter Property="BorderBrush" Value="#00BCD4" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Wii U">
+                                            <Setter Property="BorderBrush" Value="#00BCD4" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Nintendo Wii">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Wii">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="PlayStation">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Sony PlayStation">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Ps1">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="PlayStation 2">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Sony PlayStation 2">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Ps2">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="PlayStation 3">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Sony PlayStation 3">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Ps3">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="PlayStation 4">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Sony PlayStation 4">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Ps4">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="PlayStation 5">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Sony PlayStation 5">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Ps5">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="PlayStation Portable">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Sony PlayStation Portable">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Psp">
+                                            <Setter Property="BorderBrush" Value="#2196F3" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Sega Dreamcast">
+                                            <Setter Property="BorderBrush" Value="#0099FF" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Sega Genesis">
+                                            <Setter Property="BorderBrush" Value="#FF4444" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Sega Mega Drive">
+                                            <Setter Property="BorderBrush" Value="#FF4444" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Sega Master System">
+                                            <Setter Property="BorderBrush" Value="#FF4444" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Sega Saturn">
+                                            <Setter Property="BorderBrush" Value="#9575CD" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Snes">
+                                            <Setter Property="BorderBrush" Value="#9575CD" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Super Nintendo Entertainment System">
+                                            <Setter Property="BorderBrush" Value="#9575CD" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Xbox 360">
+                                            <Setter Property="BorderBrush" Value="#32CD32" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Xbox One">
+                                            <Setter Property="BorderBrush" Value="#32CD32" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="Xbox">
+                                            <Setter Property="BorderBrush" Value="#32CD32" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Game.Platforms[0].Name}" Value="PC (Windows)">
+                                            <Setter Property="BorderBrush" Value="#00BCF2" />
+                                        </DataTrigger>
+
+                                        <!--  Libraries  -->
+                                        <DataTrigger Binding="{Binding Library}" Value="Amazon Games">
+                                            <Setter Property="BorderBrush" Value="#00A8E1" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Amazon Prime Gaming">
+                                            <Setter Property="BorderBrush" Value="#00A8E1" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Prime Gaming">
+                                            <Setter Property="BorderBrush" Value="#00A8E1" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Amazon">
+                                            <Setter Property="BorderBrush" Value="#FF9900" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Battle.Net">
+                                            <Setter Property="BorderBrush" Value="#148EFF" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Battle.net">
+                                            <Setter Property="BorderBrush" Value="#148EFF" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Bethesda">
+                                            <Setter Property="BorderBrush" Value="#D4AF37" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="EA app">
+                                            <Setter Property="BorderBrush" Value="#FF6C00" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="EA Play">
+                                            <Setter Property="BorderBrush" Value="#FF6C00" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="EAplay">
+                                            <Setter Property="BorderBrush" Value="#FF6C00" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Epic Games Store">
+                                            <Setter Property="BorderBrush" Value="#FFFFFF" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Epic Games">
+                                            <Setter Property="BorderBrush" Value="#FFFFFF" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Epic">
+                                            <Setter Property="BorderBrush" Value="#FFFFFF" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Fanatical">
+                                            <Setter Property="BorderBrush" Value="#E91E63" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Geforce Now">
+                                            <Setter Property="BorderBrush" Value="#76B900" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Nvidia Geforce Now">
+                                            <Setter Property="BorderBrush" Value="#76B900" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Nvidia">
+                                            <Setter Property="BorderBrush" Value="#76B900" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Gog Galaxy">
+                                            <Setter Property="BorderBrush" Value="#B764CE" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Gog">
+                                            <Setter Property="BorderBrush" Value="#B764CE" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="GOG">
+                                            <Setter Property="BorderBrush" Value="#B764CE" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Humble">
+                                            <Setter Property="BorderBrush" Value="#FF4444" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="itch.io">
+                                            <Setter Property="BorderBrush" Value="#FA5C5C" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Legacy Games">
+                                            <Setter Property="BorderBrush" Value="#A1887F" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Origin">
+                                            <Setter Property="BorderBrush" Value="#FF6600" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="PC (Windows)">
+                                            <Setter Property="BorderBrush" Value="#00BCF2" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Pc-Games">
+                                            <Setter Property="BorderBrush" Value="#00BCF2" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Pc">
+                                            <Setter Property="BorderBrush" Value="#00BCF2" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Windows">
+                                            <Setter Property="BorderBrush" Value="#00BCF2" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Riot">
+                                            <Setter Property="BorderBrush" Value="#FF6B6B" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Rockstar Games">
+                                            <Setter Property="BorderBrush" Value="#FCAF17" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Steam Deck">
+                                            <Setter Property="BorderBrush" Value="#1A9FFF" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Steam">
+                                            <Setter Property="BorderBrush" Value="#1A9FFF" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Ubisoft Connect">
+                                            <Setter Property="BorderBrush" Value="#0084FF" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Xbox Cloud Gaming">
+                                            <Setter Property="BorderBrush" Value="#32CD32" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Xcloud">
+                                            <Setter Property="BorderBrush" Value="#32CD32" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Library}" Value="Xbox">
+                                            <Setter Property="BorderBrush" Value="#32CD32" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+
+                            <Grid>
+                                <!--  Features Image  -->
+                                <Border
+                                    Width="48"
+                                    Height="36"
+                                    Margin="40,0,0,0"
+                                    Padding="10,0,0,0"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Background="{DynamicResource TextBrush}"
+                                    CornerRadius="0,0,12,0">
+                                    <Border.Style>
+                                        <Style TargetType="Border">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Source.Name}" Value="Steam Family Sharing">
+                                                    <Setter Property="Visibility" Value="Visible" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Border.Style>
+                                    <Image
+                                        Width="36"
+                                        Height="36"
+                                        Source="{ThemeFile Icons/Filter/Default/Steam Family Sharing.png}" />
+                                </Border>
+
+                                <!--  Library Image (default)  -->
+                                <Image
+                                    Width="64"
+                                    Height="64"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Source="{ThemeFileBinding Library,
+                                                              PathFormat='Images/Banner/{0}.png'}">
+                                    <Image.Style>
+                                        <Style TargetType="Image">
+                                            <Setter Property="Visibility" Value="Visible" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Game.Library}" Value="Playnite">
+                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+
+                                <!--  Platform Image (when Library is Playnite)  -->
+                                <Image
+                                    Width="64"
+                                    Height="64"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Source="{ThemeFileBinding Game.Platforms[0].Name,
+                                                              PathFormat='Images/Banner/{0}.png'}">
+                                    <Image.Style>
+                                        <Style TargetType="Image">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Library}" Value="Playnite">
+                                                    <Setter Property="Visibility" Value="Visible" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Grid>
+
+                        </Border>
+                        <Border
+                            x:Name="InGame"
+                            Margin="8"
+                            Padding="8,4"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Bottom"
+                            Background="#AA000000"
+                            BorderBrush="{DynamicResource DefaultBorderBrush}"
+                            BorderThickness="1"
+                            CornerRadius="8"
+                            Visibility="Collapsed">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock
+                                    Height="24"
+                                    Margin="0"
+                                    FontSize="24"
+                                    Style="{StaticResource FluentIconStyle}"
+                                    Text="&#xf5b0;" />
+                                <TextBlock
+                                    x:Name="PlayTime"
+                                    Margin="8,0,0,0"
+                                    FontSize="24"
+                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                    Text="{PluginSettings Plugin=NowPlaying,
+                                                          Path=SessionLength}" />
+                            </StackPanel>
+                        </Border>
+                        <Grid.OpacityMask>
+                            <VisualBrush
+                                RenderOptions.BitmapScalingMode="Fant"
+                                Stretch="Fill"
+                                Visual="{Binding ElementName=Mask}" />
+                        </Grid.OpacityMask>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding IsInstalled}" Value="False" />
+                                <Condition Binding="{Settings Fullscreen.DarkenUninstalledGamesGrid}" Value="True" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter TargetName="BorderDarken" Property="Visibility" Value="Visible" />
+                        </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{PluginStatus Plugin=NowPlaying_db4e7ade-57fb-426c-8392-60e2347a0209, Status=Installed}" Value="True" />
+                                <Condition Binding="{Binding IsRunning}" Value="True" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter TargetName="InGame" Property="Visibility" Value="Visible" />
+                        </MultiDataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

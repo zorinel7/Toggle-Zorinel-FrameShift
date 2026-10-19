@@ -1,0 +1,57 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <sys:String x:Key="LOCThisSession">此工作階段</sys:String>
+  <sys:String x:Key="LOCStarted">已開始</sys:String>
+  <sys:String x:Key="LOCFreeSpace">可用空間：</sys:String>
+  <sys:String x:Key="LOCManageApps">管理應用程式與遊戲</sys:String>
+  <sys:String x:Key="LOCNowPlayingCaps">正在遊玩</sys:String>
+  <sys:String x:Key="LOCCurrentlyPlaying">目前正在遊玩</sys:String>
+  <sys:String x:Key="LOCNetworkConnectivity">網路連線</sys:String>
+  <sys:String x:Key="LOCStorage">儲存空間</sys:String>
+  <sys:String x:Key="LOCColorSky">天藍色</sys:String>
+  <sys:String x:Key="LOCColorGreen">綠色</sys:String>
+  <sys:String x:Key="LOCColorRed">紅色</sys:String>
+  <sys:String x:Key="LOCColorBlue">藍色</sys:String>
+  <sys:String x:Key="LOCColorYellow">黃色</sys:String>
+  <sys:String x:Key="LOCColorPurple">紫色</sys:String>
+  <sys:String x:Key="LOCColorPink">粉紅色</sys:String>
+  <sys:String x:Key="LOCColorIndigo">靛藍色</sys:String>
+  <sys:String x:Key="LOCColorTeal">藍綠色</sys:String>
+  <sys:String x:Key="LOCColorCyan">青色</sys:String>
+  <sys:String x:Key="LOCColorOrange">橘色</sys:String>
+  <sys:String x:Key="LOCColorAmber">琥珀色</sys:String>
+  <sys:String x:Key="LOCColorLime">萊姆色</sys:String>
+  <sys:String x:Key="LOCColorEmerald">祖母綠</sys:String>
+  <sys:String x:Key="LOCColorViolet">紫羅蘭色</sys:String>
+  <sys:String x:Key="LOCColorFuchsia">桃紅色</sys:String>
+  <sys:String x:Key="LOCColorRose">玫瑰色</sys:String>
+  <sys:String x:Key="LOCColorSlate">石板色</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">鉑金色</sys:String>
+  <sys:String x:Key="LOCZoomCovers">焦點選取時放大遊戲封面</sys:String>
+  <sys:String x:Key="LOCLevelShort">等級</sys:String>
+  <sys:String x:Key="LOCProgressLabel">進度：</sys:String>
+  <sys:String x:Key="LOCLockedLabel">已鎖定</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">繁體中文</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">FPS 模式</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">目前模式：{0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">目前模式：關閉</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">已啟用</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">關閉</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">關閉 — 停用限制</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">找不到目前選取的遊戲。</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">無法判定此遊戲的 EXE 檔案，因此無法建立 RTSS 設定檔。</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">無法儲存此設定檔的 RTSS 限制：</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">請確認已安裝「FrameShift RTSS Bridge」工作。</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">無法設定 RTSS 限制。</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">請從擴充功能資料夾以系統管理員身分執行一次 Install-FrameShift.cmd。</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">RTSS 設定檔名稱無效。</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">遊戲</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">開啟「遊戲 → 編輯 → 遊戲動作」，並確認 Play action 指向 EXE 檔案。</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">Playnite 擴充功能資料夾中缺少 FrameShiftBridge.exe。</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge 傳回錯誤：</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">FPS 值無效。</sys:String>
+</ResourceDictionary>

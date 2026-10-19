@@ -1,0 +1,57 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <sys:String x:Key="LOCThisSession">Tato relace</sys:String>
+  <sys:String x:Key="LOCStarted">Spuštěno</sys:String>
+  <sys:String x:Key="LOCFreeSpace">Volné místo:</sys:String>
+  <sys:String x:Key="LOCManageApps">Spravovat aplikace a hry</sys:String>
+  <sys:String x:Key="LOCNowPlayingCaps">PRÁVĚ HRAJE</sys:String>
+  <sys:String x:Key="LOCCurrentlyPlaying">Právě hraná hra</sys:String>
+  <sys:String x:Key="LOCNetworkConnectivity">Síťové připojení</sys:String>
+  <sys:String x:Key="LOCStorage">Úložiště</sys:String>
+  <sys:String x:Key="LOCColorSky">Nebeská</sys:String>
+  <sys:String x:Key="LOCColorGreen">Zelená</sys:String>
+  <sys:String x:Key="LOCColorRed">Červená</sys:String>
+  <sys:String x:Key="LOCColorBlue">Modrá</sys:String>
+  <sys:String x:Key="LOCColorYellow">Žlutá</sys:String>
+  <sys:String x:Key="LOCColorPurple">Fialová</sys:String>
+  <sys:String x:Key="LOCColorPink">Růžová</sys:String>
+  <sys:String x:Key="LOCColorIndigo">Indigová</sys:String>
+  <sys:String x:Key="LOCColorTeal">Tyrkysová</sys:String>
+  <sys:String x:Key="LOCColorCyan">Azurová</sys:String>
+  <sys:String x:Key="LOCColorOrange">Oranžová</sys:String>
+  <sys:String x:Key="LOCColorAmber">Jantarová</sys:String>
+  <sys:String x:Key="LOCColorLime">Limetková</sys:String>
+  <sys:String x:Key="LOCColorEmerald">Smaragdová</sys:String>
+  <sys:String x:Key="LOCColorViolet">Violetová</sys:String>
+  <sys:String x:Key="LOCColorFuchsia">Fuchsiová</sys:String>
+  <sys:String x:Key="LOCColorRose">Růžová</sys:String>
+  <sys:String x:Key="LOCColorSlate">Břidlicová</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">Platinová</sys:String>
+  <sys:String x:Key="LOCZoomCovers">Zvětšit obaly her při zaměření</sys:String>
+  <sys:String x:Key="LOCLevelShort">Úroveň</sys:String>
+  <sys:String x:Key="LOCProgressLabel">Postup:</sys:String>
+  <sys:String x:Key="LOCLockedLabel">Uzamčeno</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">Čeština</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">Režim FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">Aktuální režim: {0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Aktuální režim: VYPNUTO</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">AKTIVNÍ</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">VYPNUTO</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">VYPNUTO — vypnout limit</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Nepodařilo se najít aktuálně vybranou hru.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">Nepodařilo se určit EXE soubor této hry, takže nelze vytvořit profil RTSS.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Nepodařilo se uložit limit RTSS pro profil:</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Ujistěte se, že je nainstalována úloha "FrameShift RTSS Bridge".</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">Nepodařilo se nastavit limit RTSS.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Spusťte Install-FrameShift.cmd jednou jako správce ze složky rozšíření.</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Neplatný název profilu RTSS.</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">Hra</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Otevřete Hry → Upravit → Akce hry a ujistěte se, že Play action ukazuje na soubor EXE.</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe chybí ve složce rozšíření Playnite.</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge vrátil chybu:</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">Neplatná hodnota FPS.</sys:String>
+</ResourceDictionary>

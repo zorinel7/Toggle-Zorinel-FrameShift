@@ -1,0 +1,57 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <sys:String x:Key="LOCThisSession">הסשן הזה</sys:String>
+  <sys:String x:Key="LOCStarted">הופעל</sys:String>
+  <sys:String x:Key="LOCFreeSpace">מקום פנוי:</sys:String>
+  <sys:String x:Key="LOCManageApps">ניהול אפליקציות ומשחקים</sys:String>
+  <sys:String x:Key="LOCNowPlayingCaps">מנגן עכשיו</sys:String>
+  <sys:String x:Key="LOCCurrentlyPlaying">מתנגן כעת</sys:String>
+  <sys:String x:Key="LOCNetworkConnectivity">קישוריות רשת</sys:String>
+  <sys:String x:Key="LOCStorage">אחסון</sys:String>
+  <sys:String x:Key="LOCColorSky">שמיים</sys:String>
+  <sys:String x:Key="LOCColorGreen">ירוק</sys:String>
+  <sys:String x:Key="LOCColorRed">אדום</sys:String>
+  <sys:String x:Key="LOCColorBlue">כחול</sys:String>
+  <sys:String x:Key="LOCColorYellow">צהוב</sys:String>
+  <sys:String x:Key="LOCColorPurple">סגול</sys:String>
+  <sys:String x:Key="LOCColorPink">ורוד</sys:String>
+  <sys:String x:Key="LOCColorIndigo">אינדיגו</sys:String>
+  <sys:String x:Key="LOCColorTeal">טורקיז</sys:String>
+  <sys:String x:Key="LOCColorCyan">ציאן</sys:String>
+  <sys:String x:Key="LOCColorOrange">כתום</sys:String>
+  <sys:String x:Key="LOCColorAmber">ענבר</sys:String>
+  <sys:String x:Key="LOCColorLime">ליים</sys:String>
+  <sys:String x:Key="LOCColorEmerald">אמרלד</sys:String>
+  <sys:String x:Key="LOCColorViolet">סגול</sys:String>
+  <sys:String x:Key="LOCColorFuchsia">פוקסיה</sys:String>
+  <sys:String x:Key="LOCColorRose">ורד</sys:String>
+  <sys:String x:Key="LOCColorSlate">צפחה</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">פלטינה</sys:String>
+  <sys:String x:Key="LOCZoomCovers">הגדל עטיפות משחק בעת מיקוד</sys:String>
+  <sys:String x:Key="LOCLevelShort">רמה</sys:String>
+  <sys:String x:Key="LOCProgressLabel">התקדמות:</sys:String>
+  <sys:String x:Key="LOCLockedLabel">נעול</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">עברית</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">מצב FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">מצב נוכחי: {0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">מצב נוכחי: כבוי</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">פעיל</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">כבוי</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">כבוי — השבתת המגבלה</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">לא ניתן למצוא את המשחק שנבחר כעת.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">לא ניתן לזהות את קובץ ה‑EXE של המשחק, ולכן לא ניתן ליצור פרופיל RTSS.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">לא ניתן לשמור את מגבלת RTSS עבור הפרופיל:</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">ודא שהמשימה "FrameShift RTSS Bridge" מותקנת.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">לא ניתן להגדיר את מגבלת RTSS.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">הפעל את Install-FrameShift.cmd פעם אחת כמנהל מערכת מתיקיית התוסף.</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">שם פרופיל RTSS לא חוקי.</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">משחק</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">פתח משחקים ← עריכה ← פעולות משחק וודא ש‑Play action מצביע על קובץ ה‑EXE.</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe חסר בתיקיית התוסף של Playnite.</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge החזיר שגיאה:</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">ערך FPS לא חוקי.</sys:String>
+</ResourceDictionary>

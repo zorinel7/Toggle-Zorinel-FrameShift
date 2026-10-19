@@ -1,0 +1,57 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <sys:String x:Key="LOCThisSession">Questa sessione</sys:String>
+  <sys:String x:Key="LOCStarted">Avviato</sys:String>
+  <sys:String x:Key="LOCFreeSpace">Spazio libero:</sys:String>
+  <sys:String x:Key="LOCManageApps">Gestisci app e giochi</sys:String>
+  <sys:String x:Key="LOCNowPlayingCaps">IN RIPRODUZIONE</sys:String>
+  <sys:String x:Key="LOCCurrentlyPlaying">In riproduzione</sys:String>
+  <sys:String x:Key="LOCNetworkConnectivity">Connettività di rete</sys:String>
+  <sys:String x:Key="LOCStorage">Archiviazione</sys:String>
+  <sys:String x:Key="LOCColorSky">Cielo</sys:String>
+  <sys:String x:Key="LOCColorGreen">Verde</sys:String>
+  <sys:String x:Key="LOCColorRed">Rosso</sys:String>
+  <sys:String x:Key="LOCColorBlue">Blu</sys:String>
+  <sys:String x:Key="LOCColorYellow">Giallo</sys:String>
+  <sys:String x:Key="LOCColorPurple">Viola</sys:String>
+  <sys:String x:Key="LOCColorPink">Rosa</sys:String>
+  <sys:String x:Key="LOCColorIndigo">Indaco</sys:String>
+  <sys:String x:Key="LOCColorTeal">Turchese</sys:String>
+  <sys:String x:Key="LOCColorCyan">Ciano</sys:String>
+  <sys:String x:Key="LOCColorOrange">Arancione</sys:String>
+  <sys:String x:Key="LOCColorAmber">Ambra</sys:String>
+  <sys:String x:Key="LOCColorLime">Lime</sys:String>
+  <sys:String x:Key="LOCColorEmerald">Smeraldo</sys:String>
+  <sys:String x:Key="LOCColorViolet">Violetto</sys:String>
+  <sys:String x:Key="LOCColorFuchsia">Fucsia</sys:String>
+  <sys:String x:Key="LOCColorRose">Rosa</sys:String>
+  <sys:String x:Key="LOCColorSlate">Ardesia</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">Platino</sys:String>
+  <sys:String x:Key="LOCZoomCovers">Ingrandisci le copertine dei giochi quando sono selezionate</sys:String>
+  <sys:String x:Key="LOCLevelShort">Livello</sys:String>
+  <sys:String x:Key="LOCProgressLabel">Avanzamento:</sys:String>
+  <sys:String x:Key="LOCLockedLabel">Bloccato</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">Italiano</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">Modalità FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">Modalità attuale: {0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Modalità attuale: DISATTIVATA</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">ATTIVA</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">DISATTIVATA</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">DISATTIVATA — disabilita limite</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Impossibile trovare il gioco attualmente selezionato.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">Impossibile determinare il file EXE del gioco, quindi non è possibile creare il profilo RTSS.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Impossibile salvare il limite RTSS per il profilo:</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Assicurati che l’attività "FrameShift RTSS Bridge" sia installata.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">Impossibile impostare il limite RTSS.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Esegui una volta Install-FrameShift.cmd come amministratore dalla cartella dell’estensione.</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Nome del profilo RTSS non valido.</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">Gioco</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Apri Giochi → Modifica → Azioni gioco e assicurati che Play action punti al file EXE.</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe non è presente nella cartella dell’estensione di Playnite.</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge ha restituito un errore:</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">Valore FPS non valido.</sys:String>
+</ResourceDictionary>

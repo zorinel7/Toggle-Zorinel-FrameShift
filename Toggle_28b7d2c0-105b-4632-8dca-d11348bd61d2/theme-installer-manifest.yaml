@@ -1,0 +1,245 @@
+﻿AddonId: 'Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2'
+Packages:
+  - Version: 1.0.3
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-06-29
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.0.3/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_0_3.pthm
+    Changelog:
+      - Initial listing on Addon DB
+  - Version: 1.0.4
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-06-30
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.0.4/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_0_4.pthm
+    Changelog:
+      - Increased focused element contrast
+      - Better coloring
+      - Integrated Mo Data Extension (experimental)
+  - Version: 1.0.5
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-07-01
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.0.5/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_0_5.pthm
+    Changelog:
+      - Bugfixes
+      - Accent color now set to Windows accent color
+  - Version: 1.1.0
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-07-08
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.1.0/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_1_0.pthm
+    Changelog:
+      - Full Mo Data Support
+      - Includes WiFi and Disk Usage stats
+  - Version: 1.1.1
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-07-08
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.1.1/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_1_1.pthm
+    Changelog:
+      - Fix UI colors not being respected on Game Selection glow and certain hyperlinks
+      - ⚠️PSA⚠️ Toggle uses your windows accent color for the theme accent color. Change it in Windows Settings and restart Playnite to see.
+  - Version: 1.1.2
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-07-09
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.1.2/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_1_2.pthm
+    Changelog:
+      - Change text sizing in Mo Data details window
+  - Version: 1.1.3
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-07-12
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.1.3/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_1_3.pthm
+    Changelog:
+      - New colorful icons
+      - Thanks to Kenny.nl for the icons!
+  - Version: 1.2.0
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-07-17
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.2.0/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_2_0.pthm
+    Changelog:
+      - Fix icon contrast
+      - Utilize custom Now Playing Window (Make sure you update Now Playing to v0.4.0 or higher before you install this update)
+      - Added some animation and changed the game list view slightly
+      - Fix some outstanding UI issues
+      - Add custom color schemes
+  - Version: 1.3.0
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-07-23
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.3.0/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_3_0.pthm
+    Changelog:
+      - Localized to Arabic, Chinese, English, French, German, Hindi, Portuguese, Spanish
+      - Fix font sizing for game cover labels
+      - Increase text contrast in low contrast areas
+      - Game cover labels respect Playnite settings
+      - Add currently playing indicators on games (Requires Now Playing)
+  - Version: 1.3.1
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-07-24
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.3.1/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_3_1.pthm
+    Changelog:
+      - Minor sizing fixes
+  - Version: 1.4.1
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-08-02
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.4.1/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_4_1.pthm
+    Changelog:
+      - Add Support for PlayniteAchievements Achievements
+      - ⚠️IMPORTANT⚠️ You must install PlayniteAchievements Fullscreen Helper for this to work
+  - Version: 1.4.2
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-08-04
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.4.2/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_4_2.pthm
+    Changelog:
+      - Fix ThemeOptions not loading correctly
+  - Version: 1.5.0
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-08-07
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.5.0/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_5_0.pthm
+    Changelog:
+      - Add additional controller icons within Theme Options
+  - Version: 1.5.1
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-08-11
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.5.1/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_5_1.pthm
+    Changelog:
+      - Fix Switch and Steamdeck icons
+      - Fix Game Menu border
+  - Version: 1.5.2
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-08-14
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.5.2/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_5_2.pthm
+    Changelog:
+      - UI bugfixes
+      - Fix French translations (Thanks mike!)
+  - Version: 1.5.3
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-09-01
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.5.3/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_5_3.pthm
+    Changelog:
+      - Redo grid view
+  - Version: 1.5.4
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-09-01
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v.1.5.4/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_5_4.pthm
+    Changelog:
+      - Fix focus issue
+  - Version: 1.5.6
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-09-02
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.5.6/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_5_6.pthm
+    Changelog:
+      - ✨ Add ROG Ally button layout (requires ThemeOptions) ✨
+      - Go to Settings ➡️ Theme Options ➡️ Button Layout to check it out
+  - Version: 1.6.0
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-09-06
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.6.0/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_6_0.pthm
+    Changelog:
+      - ✨ Add Preview Images for Button Layouts ✨ - Go to Settings ➡️ Theme Options ➡️ Button Layout to check it out
+      - ✨ Added Library Icons for Amazon, Battle.net, EA, Epic, Fanatical, GOG, Humble, itch.io, Playnite, Riot, Rockstar Games, Playstation, Steam, Ubisoft, and Xbox ✨
+      - 🚀 Reduced theme size (from 7.1MB to 4.6MB) by removing unused assets from distributed theme 🚀
+  - Version: 1.6.1
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-09-12
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.6.1/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_6_1.pthm
+    Changelog:
+      - '✨ QoL: Added Labels for persistent dock items ✨'
+      - "⚒️ UI bugfixes: MoData details pane respects user's battery display settings and PlayniteAchievements game achievement completionist stars (platinum trophies) show up when you have all achievements unlocked ⚒️"
+      - ⚠️ Officially made ThemeOptions a REQUIRED extension. If you don't have it installed yet, install it now or you'll meet Clippy ⚠️
+      - Recommended Extensions are still ExtraMetadataLoader, Now Playing, PlayniteAchievements, PlayniteAchievements Fullscreen Helper, and MoData
+  - Version: 1.6.2
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-09-14
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.6.2/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_6_2.pthm
+    Changelog:
+      - 🐛 Fixed square cover UI bug in NowPlaying and 16:10 UI bug
+  - Version: 1.6.4
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-09-18
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.6.4/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_6_4.pthm
+    Changelog:
+      - 🐛 Fixed square cover UI bug in Game Details
+      - 🐛 Fixed longstanding UI issue for editing game fields
+      - ✨ Add ability to choose what data is shown in Game Details. It's recommended to only show all items if you're using portrait covers
+  - Version: 1.6.5
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-09-29
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.6.5/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_6_5.pthm
+    Changelog:
+      - 🐛 Fixed app update icon
+      - ✨ Add ability to not zoom game covers on focus
+  - Version: 1.6.7
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-10-12
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.6.7/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_6_7.pthm
+    Changelog:
+      - 🐛 Fixed game achievement UI inconsistency between unlocked and locked achievement
+      - 🐛 Change network icon to be more consistent with Windows 11 UI
+      - 🐛 Fix Cyan color using windows color scheme
+      - ✨ Add ability to open game details via touchscreen. Tap once to select a game then tap the selected game to get into the game details. This also works for mouse clicks.
+  - Version: 1.7.0
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2025-10-21
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.7.0/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_7_0.pthm
+    Changelog:
+      - ✨ Add support for an icon pixel grid background (configurable in Theme Options)
+      - ✨ Use W11 LAN icon for wired networks to be consistent with the OS)
+      - ✨ Make WiFi icon more clear with faded empty bars being shown
+      - ✨ Add support for ThemeOptions extensions feature
+  - Version: 1.8.0
+    RequiredApiVersion: 2.9.0
+    ReleaseDate: 2025-10-28
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.8.0/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_8_0.pthm
+    Changelog:
+      - ✨ Updated progress window - fixed text overflow, better readability and user communication
+      - ⚠️ Requires Playnite Version 10.42 or greater (try to update Playnite before installing)
+  - Version: 1.9.1
+    RequiredApiVersion: 2.9.0
+    ReleaseDate: 2025-11-23
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.9.1/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_9_1.pthm
+    Changelog:
+      - 🎨 Made button UI more consistent across views
+      - ✨ Added banner image generation and integrated banners into UI
+      - ✨ Introduced new 2-tier Game Details view with HowLongToBeat (HLTB) integration
+      - 🐛 Fixed progress bar clipping issue
+      - 🐛 Updated default button focus behavior for better controller and keyboard navigation (thanks pinn73)
+      - 🐛 Various UI fixes and polish improvements
+  - Version: 1.9.2
+    RequiredApiVersion: 2.9.0
+    ReleaseDate: 2025-11-23
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.9.2/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_9_2.pthm
+    Changelog:
+      - 🐛 Fixed PSP banner bug (thanks TwoTracks)
+  - Version: 1.9.3
+    RequiredApiVersion: 2.9.0
+    ReleaseDate: 2025-11-26
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.9.3/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_9_3.pthm
+    Changelog:
+      - ✨ Add steam family sharing indicator (thanks TwoTracks)
+      - 🐛 Fix focus bug on Game Details pop up screen
+      - ✨ Other minor UI tweaks
+      - 🎨 Added new theme color, Platinum
+  - Version: 1.9.4
+    RequiredApiVersion: 2.9.0
+    ReleaseDate: 2025-11-29
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.9.4/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_9_4.pthm
+    Changelog:
+      - 🐛 Fix missing platinum color scheme image
+  - Version: 1.9.5
+    RequiredApiVersion: 2.9.0
+    ReleaseDate: 2025-12-23
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.9.5/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_9_5.pthm
+    Changelog:
+      - 🐛 Fix Itch.io casing issue (thanks TwoTracks)
+      - ✨ Enhanced focus indicator visibility across all button styles
+  - Version: 1.9.6
+    RequiredApiVersion: 2.9.0
+    ReleaseDate: 2026-04-11
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.9.6/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_9_6.pthm
+    Changelog:
+      - Fix longstanding focus issues
+  - Version: 1.10.0
+    RequiredApiVersion: 2.9.0
+    ReleaseDate: 2026-04-19
+    PackageUrl: https://github.com/jonosellier/toggle-theme-playnite/releases/download/v1.10.0/Toggle_28b7d2c0-105b-4632-8dca-d11348bd61d2_1_10_0.pthm
+    Changelog:
+      - Don't install this update until you are ready to migrate your Achievements over (~10mins work)
+      - 🚨BREAKING CHANGE🚨 - Migrated from PlayniteAchievements to Playnite Achievements. Install Playnite Achievements to continue seeing Achievements
+      - No new functionality at this time but PlayniteAchievements is no longer supported and can be uninstalled unless used elsewhere.
+      - See https://github.com/justin-delano/PlayniteAchievements/wiki for a setup guide

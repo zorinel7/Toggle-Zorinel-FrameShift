@@ -1,0 +1,262 @@
+﻿Presets:
+  AccentColorOption:
+    Name: Accent Color
+    LocKey: LOCAccentColor
+    Presets:
+      Default:
+        Name: Sky
+        LocKey: LOCColorSky
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Default: '#38bdf8'
+            Value: '#38bdf8'
+        Preview: color-swatches/Sky.png
+      GreenOption:
+        Name: Green
+        LocKey: LOCColorGreen
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#22c55e'
+        Preview: color-swatches/Green.png
+      RedOption:
+        Name: Red
+        LocKey: LOCColorRed
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#ef4444'
+        Preview: color-swatches/Red.png
+      BlueOption:
+        Name: Blue
+        LocKey: LOCColorBlue
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#3b82f6'
+        Preview: color-swatches/Blue.png
+      YellowOption:
+        Name: Yellow
+        LocKey: LOCColorYellow
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#eab308'
+          PrimaryContrastBrush:
+            Type: SolidColorBrush
+            Value: '#242424'
+        Preview: color-swatches/Yellow.png
+      PurpleOption:
+        Name: Purple
+        LocKey: LOCColorPurple
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#a855f7'
+        Preview: color-swatches/Purple.png
+      PinkOption:
+        Name: Pink
+        LocKey: LOCColorPink
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#ec4899'
+        Preview: color-swatches/Pink.png
+      IndigoOption:
+        Name: Indigo
+        LocKey: LOCColorIndigo
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#6366f1'
+        Preview: color-swatches/Indigo.png
+      TealOption:
+        Name: Teal
+        LocKey: LOCColorTeal
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#14b8a6'
+        Preview: color-swatches/Teal.png
+      CyanOption:
+        Name: Cyan
+        LocKey: LOCColorCyan
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#06b6d4'
+        Preview: color-swatches/Cyan.png
+      OrangeOption:
+        Name: Orange
+        LocKey: LOCColorOrange
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#f97316'
+        Preview: color-swatches/Orange.png
+      AmberOption:
+        Name: Amber
+        LocKey: LOCColorAmber
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#f59e0b'
+          PrimaryContrastBrush:
+            Type: SolidColorBrush
+            Value: '#242424'
+        Preview: color-swatches/Amber.png
+      LimeOption:
+        Name: Lime
+        LocKey: LOCColorLime
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#84cc16'
+          PrimaryContrastBrush:
+            Type: SolidColorBrush
+            Value: '#242424'
+        Preview: color-swatches/Lime.png
+      EmeraldOption:
+        Name: Emerald
+        LocKey: LOCColorEmerald
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#10b981'
+        Preview: color-swatches/Emerald.png
+      VioletOption:
+        Name: Violet
+        LocKey: LOCColorViolet
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#8b5cf6'
+        Preview: color-swatches/Violet.png
+      FuchsiaOption:
+        Name: Fuchsia
+        LocKey: LOCColorFuchsia
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#d946ef'
+        Preview: color-swatches/Fuchsia.png
+      RoseOption:
+        Name: Rose
+        LocKey: LOCColorRose
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#f43f5e'
+        Preview: color-swatches/Rose.png
+      SlateOption:
+        Name: Slate
+        LocKey: LOCColorSlate
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#64748b'
+        Preview: color-swatches/Slate.png
+      PlatinumOption:
+        Name: Platinum
+        LocKey: LOCColorPlatinum
+        Constants:
+          PrimaryBrush:
+            Type: SolidColorBrush
+            Value: '#f0f9ff'
+          PrimaryContrastBrush:
+            Type: SolidColorBrush
+            Value: '#242424'
+        Preview: color-swatches/Platinum.png
+  ButtonPromptOption:
+    Name: Button Prompts
+    LocKey: LOCSettingsFullscreenButtonPrompts
+    Presets:
+      Default:
+        Name: Xbox
+        Preview: button-previews\Xbox.png
+      PlayStation:
+        Name: PlayStation
+        Files:
+          - Images\ButtonPrompts\Others\PlayStation.xaml
+        Preview: button-previews\PS.png
+      Steamdeck:
+        Name: Steamdeck
+        Files:
+          - Images\ButtonPrompts\Others\Steamdeck.xaml
+        Preview: button-previews\Steamdeck.png
+      Switch:
+        Name: Switch
+        Files:
+          - Images\ButtonPrompts\Others\Switch.xaml
+        Preview: button-previews\Switch.png
+      Ally:
+        Name: ROG Ally
+        Files:
+          - Images\ButtonPrompts\Others\Ally.xaml
+        Preview: button-previews\Ally.png
+      Generic:
+        Name: Platform-Agnostic
+        Files:
+          - Images\ButtonPrompts\Others\Generic.xaml
+        Preview: button-previews\Generic.png
+  BgStyleOptions:
+    Name: Background Image
+    Presets:
+      Default:
+        Name: Icon Grid
+      Background:
+        Name: Game Background
+        Constants:
+          BgStyle:
+            Type: String
+            Value: bg
+Variables:
+  HideChangeView:
+    Title: Hide Change View Button
+    LocKey: LOCHideChangeView
+    Type: Boolean
+    Default: true
+  ZoomCovers:
+    Title: Zoom Game Covers on Focus
+    LocKey: LOCZoomCovers
+    Type: Boolean
+    Default: true
+  Banners:
+    Title: Show Platform and Library Banners
+    LocKey: LOCBanners
+    Type: Boolean
+    Default: false
+  GameDetailsHeader:
+    Title: Game Details Info
+    Type: Header
+    TitleStyle: SettingsSectionHeaderText
+    Style: SettingsSectionHeaderDockPanelStyle
+  PlayTime:
+    Title: Play Time
+    LocKey: LOCTimePlayed
+    Type: Boolean
+    Default: true
+  LastPlayed:
+    Title: Last Played
+    LocKey: LOCGameLastActivityTitle
+    Type: Boolean
+    Default: true
+  ReleaseYear:
+    Title: Release Year
+    LocKey: LOCGameReleaseDateTitle
+    Type: Boolean
+    Default: false
+  Library:
+    Title: Library
+    LocKey: LOCGameProviderTitle
+    Type: Boolean
+    Default: true
+  Achievements:
+    Title: Achievements (Requires PlayniteAchievements)
+    Type: Boolean
+    Default: true
+  HowLongToBeat:
+    Title: HowLongToBeat (Requires HLTB)
+    Type: Boolean
+    Default: true

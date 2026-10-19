@@ -1,0 +1,57 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <sys:String x:Key="LOCThisSession">Denne økten</sys:String>
+  <sys:String x:Key="LOCStarted">Startet</sys:String>
+  <sys:String x:Key="LOCFreeSpace">Ledig plass:</sys:String>
+  <sys:String x:Key="LOCManageApps">Administrer apper og spill</sys:String>
+  <sys:String x:Key="LOCNowPlayingCaps">SPILLES NÅ</sys:String>
+  <sys:String x:Key="LOCCurrentlyPlaying">Spilles nå</sys:String>
+  <sys:String x:Key="LOCNetworkConnectivity">Nettverkstilkobling</sys:String>
+  <sys:String x:Key="LOCStorage">Lagring</sys:String>
+  <sys:String x:Key="LOCColorSky">Himmel</sys:String>
+  <sys:String x:Key="LOCColorGreen">Grønn</sys:String>
+  <sys:String x:Key="LOCColorRed">Rød</sys:String>
+  <sys:String x:Key="LOCColorBlue">Blå</sys:String>
+  <sys:String x:Key="LOCColorYellow">Gul</sys:String>
+  <sys:String x:Key="LOCColorPurple">Lilla</sys:String>
+  <sys:String x:Key="LOCColorPink">Rosa</sys:String>
+  <sys:String x:Key="LOCColorIndigo">Indigo</sys:String>
+  <sys:String x:Key="LOCColorTeal">Turkis</sys:String>
+  <sys:String x:Key="LOCColorCyan">Cyan</sys:String>
+  <sys:String x:Key="LOCColorOrange">Oransje</sys:String>
+  <sys:String x:Key="LOCColorAmber">Rav</sys:String>
+  <sys:String x:Key="LOCColorLime">Lime</sys:String>
+  <sys:String x:Key="LOCColorEmerald">Smaragd</sys:String>
+  <sys:String x:Key="LOCColorViolet">Fiolett</sys:String>
+  <sys:String x:Key="LOCColorFuchsia">Fuksia</sys:String>
+  <sys:String x:Key="LOCColorRose">Rose</sys:String>
+  <sys:String x:Key="LOCColorSlate">Skifer</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">Platina</sys:String>
+  <sys:String x:Key="LOCZoomCovers">Forstørr spillomslag når de har fokus</sys:String>
+  <sys:String x:Key="LOCLevelShort">Nivå</sys:String>
+  <sys:String x:Key="LOCProgressLabel">Fremdrift:</sys:String>
+  <sys:String x:Key="LOCLockedLabel">Låst</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">Norsk</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">FPS-modus</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">Gjeldende modus: {0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Gjeldende modus: AV</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">AKTIV</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">AV</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">AV — deaktiver grense</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Finner ikke spillet som er valgt nå.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">Kunne ikke finne EXE-filen til dette spillet, så RTSS-profilen kan ikke opprettes.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Kunne ikke lagre RTSS-grensen for profilen:</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Kontroller at oppgaven "FrameShift RTSS Bridge" er installert.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">Kunne ikke angi RTSS-grensen.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Kjør Install-FrameShift.cmd én gang som administrator fra utvidelsesmappen.</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Ugyldig RTSS-profilnavn.</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">Spill</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Åpne Spill → Rediger → Spillhandlinger og sørg for at Play action peker på EXE-filen.</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe mangler i Playnite-utvidelsesmappen.</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge returnerte en feil:</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">Ugyldig FPS-verdi.</sys:String>
+</ResourceDictionary>

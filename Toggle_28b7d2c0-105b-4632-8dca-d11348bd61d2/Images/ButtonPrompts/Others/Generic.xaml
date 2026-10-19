@@ -1,0 +1,28 @@
+<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:pmrk="clr-namespace:Playnite.FullscreenApp.Markup;assembly=Playnite.FullscreenApp">
+	<DataTemplate x:Key="ButtonPromptA">
+		<Viewbox>
+			<Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Generic/ButtonPromptA.png'}" />
+		</Viewbox>
+	</DataTemplate>
+
+	<DataTemplate x:Key="ButtonPromptB">
+		<Viewbox>
+			<Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Generic/ButtonPromptB.png'}" />
+		</Viewbox>
+	</DataTemplate>
+
+	<DataTemplate x:Key="ButtonPromptX">
+		<Viewbox>
+			<Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Generic/ButtonPromptX.png'}" />
+		</Viewbox>
+	</DataTemplate>
+
+	<DataTemplate x:Key="ButtonPromptY">
+		<Viewbox>
+			<Image RenderOptions.BitmapScalingMode="Fant" Source="{pmrk:ThemeFile 'Images/Buttons/Generic/ButtonPromptY.png'}" />
+		</Viewbox>
+	</DataTemplate>
+</ResourceDictionary>

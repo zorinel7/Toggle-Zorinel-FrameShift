@@ -1,0 +1,250 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="ItemFilterQuickPreset" TargetType="CheckBoxEx">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBoxEx">
+                    <Grid Margin="-48,0,48,-48">
+                        <!--  Larger focus background layer  -->
+                        <Border
+                            x:Name="FocusLayer"
+                            Margin="18,2,1,2"
+                            Padding="17"
+                            Background="Transparent"
+                            BorderBrush="Transparent"
+                            BorderThickness="1"
+                            CornerRadius="100" />
+
+                        <!--  Main content layer  -->
+                        <Border
+                            Margin="24,8,7,8"
+                            Padding="12"
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="100">
+                            <Grid>
+                                <!--  Grid layout for image with focus label  -->
+                                <Grid x:Name="ImageLayout">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <!--  Focus label - appears above image when focused  -->
+                                    <TextBlock
+                                        Grid.Row="0"
+                                        Margin="-64,-64,-64,4"
+                                        FontSize="16"
+                                        FontWeight="Bold"
+                                        Foreground="{TemplateBinding Foreground}"
+                                        Text="{Binding Name}"
+                                        TextAlignment="Center"
+                                        TextWrapping="Wrap">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding IsFocused, RelativeSource={RelativeSource AncestorType=CheckBoxEx}}" Value="True">
+                                                        <Setter Property="Visibility" Value="Visible" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+
+                                    <!--  Image container with two overlapping images  -->
+                                    <Grid Grid.Row="1">
+                                        <!--  Default/Inactive Image  -->
+                                        <Image
+                                            x:Name="DefaultImage"
+                                            Width="80"
+                                            Height="80"
+                                            Margin="-12"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Opacity="1"
+                                            RenderOptions.BitmapScalingMode="Fant"
+                                            Source="{ThemeFileBinding Name,
+                                                                      PathFormat='Icons/Filter/Default/{0}.png'}"
+                                            Stretch="Uniform">
+                                            <Image.Style>
+                                                <Style TargetType="Image">
+                                                    <Setter Property="Opacity" Value="1" />
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Source}" Value="{x:Null}">
+                                                            <Setter Property="Visibility" Value="Collapsed" />
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                        </Image>
+
+                                        <!--  Active Image  -->
+                                        <Image
+                                            x:Name="ActiveImage"
+                                            Width="80"
+                                            Height="80"
+                                            Margin="-12"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Opacity="0"
+                                            RenderOptions.BitmapScalingMode="Fant"
+                                            Source="{ThemeFileBinding Name,
+                                                                      PathFormat='Icons/Filter/Active/{0}.png'}"
+                                            Stretch="Uniform">
+                                            <Image.Style>
+                                                <Style TargetType="Image">
+                                                    <Setter Property="Opacity" Value="0" />
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=Source}" Value="{x:Null}">
+                                                            <Setter Property="Visibility" Value="Collapsed" />
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Image.Style>
+                                            <Image.Effect>
+                                                <DropShadowEffect
+                                                    BlurRadius="10"
+                                                    Direction="315"
+                                                    Opacity="0.5"
+                                                    ShadowDepth="3"
+                                                    Color="Black" />
+                                            </Image.Effect>
+                                        </Image>
+                                    </Grid>
+                                </Grid>
+
+                                <!--  Text that stays present but becomes visually hidden when image exists  -->
+                                <TextBlock x:Name="TextContent" FontFamily="{DynamicResource FontDefault}">
+                                    <TextBlock.Style>
+                                        <Style BasedOn="{StaticResource TextBlockBaseStyle}" TargetType="TextBlock">
+                                            <Style.Triggers>
+                                                <!--  Show text if both images are null  -->
+                                                <MultiDataTrigger>
+                                                    <MultiDataTrigger.Conditions>
+                                                        <Condition Binding="{Binding ElementName=DefaultImage, Path=Source}" Value="{x:Null}" />
+                                                        <Condition Binding="{Binding ElementName=ActiveImage, Path=Source}" Value="{x:Null}" />
+                                                    </MultiDataTrigger.Conditions>
+                                                    <Setter Property="Opacity" Value="1" />
+                                                    <Setter Property="Width" Value="Auto" />
+                                                </MultiDataTrigger>
+                                            </Style.Triggers>
+                                            <!--  Default state when images exist - visually hidden but still present  -->
+                                            <Setter Property="Opacity" Value="0" />
+                                            <Setter Property="Width" Value="0" />
+                                        </Style>
+                                    </TextBlock.Style>
+                                    <Grid>
+                                        <TextBlock
+                                            FontWeight="SemiBold"
+                                            Text="{Binding Name}"
+                                            Visibility="Hidden" />
+                                        <StackPanel>
+                                            <TextBlock
+                                                HorizontalAlignment="Center"
+                                                Foreground="{TemplateBinding Foreground}"
+                                                Text="{Binding Name}" />
+                                            <TextBlock
+                                                x:Name="SelectionBullet"
+                                                Margin="0,0,0,-14"
+                                                HorizontalAlignment="Center"
+                                                FontSize="12"
+                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                Text="&#x25CF;"
+                                                Visibility="Hidden" />
+                                        </StackPanel>
+                                    </Grid>
+                                </TextBlock>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter TargetName="FocusLayer" Property="Background" Value="#1AFFFFFF" />
+                            <Setter TargetName="FocusLayer" Property="BorderBrush" Value="{DynamicResource DefaultBorderBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="TextContent" Property="FontWeight" Value="SemiBold" />
+                            <Setter TargetName="SelectionBullet" Property="Visibility" Value="Visible" />
+                            <!--  Fade default image out and active image in when checked with 0.2s transition  -->
+                            <Setter TargetName="DefaultImage" Property="Opacity" Value="0" />
+                            <Setter TargetName="ActiveImage" Property="Opacity" Value="1" />
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="DefaultImage"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="0"
+                                            Duration="0:0:0.2" />
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="ActiveImage"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0:0:0.2" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="DefaultImage"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="1"
+                                            Duration="0:0:0.2" />
+                                        <DoubleAnimation
+                                            Storyboard.TargetName="ActiveImage"
+                                            Storyboard.TargetProperty="Opacity"
+                                            To="0"
+                                            Duration="0:0:0.2" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type FilterPresetSelector}">
+        <Setter Property="Focusable" Value="False" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type FilterPresetSelector}">
+                    <ItemsControlEx
+                        x:Name="PART_ItemsFilterPresets"
+                        Margin="0,0,24,0"
+                        Focusable="False"
+                        HorizontalLayout="True"
+                        KeyboardNavigation.DirectionalNavigation="Once">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Margin="48,0,0,0" Orientation="Horizontal" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.Template>
+                            <ControlTemplate>
+                                <Border x:Name="PadderBorder" Margin="48,0,0,0">
+                                    <ScrollViewer
+                                        MaxWidth="1366"
+                                        Margin="-48,-48,-48,0"
+                                        CanContentScroll="True"
+                                        Focusable="False"
+                                        HorizontalScrollBarVisibility="Hidden"
+                                        VerticalScrollBarVisibility="Disabled">
+                                        <ItemsPresenter />
+                                    </ScrollViewer>
+                                </Border>
+                            </ControlTemplate>
+                        </ItemsControl.Template>
+                    </ItemsControlEx>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

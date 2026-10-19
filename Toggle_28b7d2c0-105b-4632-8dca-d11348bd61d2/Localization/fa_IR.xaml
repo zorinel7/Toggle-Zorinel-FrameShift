@@ -1,0 +1,57 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <sys:String x:Key="LOCThisSession">این جلسه</sys:String>
+  <sys:String x:Key="LOCStarted">شروع شده</sys:String>
+  <sys:String x:Key="LOCFreeSpace">فضای خالی:</sys:String>
+  <sys:String x:Key="LOCManageApps">مدیریت برنامه‌ها و بازی‌ها</sys:String>
+  <sys:String x:Key="LOCNowPlayingCaps">در حال بازی</sys:String>
+  <sys:String x:Key="LOCCurrentlyPlaying">در حال بازی فعلی</sys:String>
+  <sys:String x:Key="LOCNetworkConnectivity">اتصال شبکه</sys:String>
+  <sys:String x:Key="LOCStorage">فضای ذخیره‌سازی</sys:String>
+  <sys:String x:Key="LOCColorSky">آسمانی</sys:String>
+  <sys:String x:Key="LOCColorGreen">سبز</sys:String>
+  <sys:String x:Key="LOCColorRed">قرمز</sys:String>
+  <sys:String x:Key="LOCColorBlue">آبی</sys:String>
+  <sys:String x:Key="LOCColorYellow">زرد</sys:String>
+  <sys:String x:Key="LOCColorPurple">بنفش</sys:String>
+  <sys:String x:Key="LOCColorPink">صورتی</sys:String>
+  <sys:String x:Key="LOCColorIndigo">نیلی</sys:String>
+  <sys:String x:Key="LOCColorTeal">فیروزه‌ای</sys:String>
+  <sys:String x:Key="LOCColorCyan">فیروزه‌ای روشن</sys:String>
+  <sys:String x:Key="LOCColorOrange">نارنجی</sys:String>
+  <sys:String x:Key="LOCColorAmber">کهربایی</sys:String>
+  <sys:String x:Key="LOCColorLime">لیمویی</sys:String>
+  <sys:String x:Key="LOCColorEmerald">زمردی</sys:String>
+  <sys:String x:Key="LOCColorViolet">بنفش روشن</sys:String>
+  <sys:String x:Key="LOCColorFuchsia">سرخابی</sys:String>
+  <sys:String x:Key="LOCColorRose">رز</sys:String>
+  <sys:String x:Key="LOCColorSlate">خاکستری سنگ‌لوحی</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">پلاتینی</sys:String>
+  <sys:String x:Key="LOCZoomCovers">بزرگ‌نمایی جلد بازی هنگام فوکوس</sys:String>
+  <sys:String x:Key="LOCLevelShort">سطح</sys:String>
+  <sys:String x:Key="LOCProgressLabel">پیشرفت:</sys:String>
+  <sys:String x:Key="LOCLockedLabel">قفل شده</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">فارسی</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">حالت FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">حالت فعلی: {0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">حالت فعلی: خاموش</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">فعال</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">خاموش</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">خاموش — غیرفعال کردن محدودیت</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">بازی انتخاب‌شده فعلی پیدا نشد.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">فایل EXE این بازی شناسایی نشد، بنابراین امکان ایجاد پروفایل RTSS وجود ندارد.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">ذخیره محدودیت RTSS برای پروفایل انجام نشد:</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">مطمئن شوید وظیفه "FrameShift RTSS Bridge" نصب شده است.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">تنظیم محدودیت RTSS انجام نشد.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">فایل Install-FrameShift.cmd را یک‌بار با دسترسی مدیر از پوشه افزونه اجرا کنید.</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">نام پروفایل RTSS نامعتبر است.</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">بازی</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">به بازی‌ها ← ویرایش ← اقدامات بازی بروید و مطمئن شوید Play action به فایل EXE اشاره می‌کند.</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">فایل FrameShiftBridge.exe در پوشه افزونه Playnite وجود ندارد.</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge خطا برگرداند:</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">مقدار FPS نامعتبر است.</sys:String>
+</ResourceDictionary>

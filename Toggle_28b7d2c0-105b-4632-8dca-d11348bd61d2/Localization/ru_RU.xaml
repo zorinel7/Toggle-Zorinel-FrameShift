@@ -1,0 +1,57 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib">
+  <sys:String x:Key="LOCThisSession">Этот сеанс</sys:String>
+  <sys:String x:Key="LOCStarted">Запущено</sys:String>
+  <sys:String x:Key="LOCFreeSpace">Свободное место:</sys:String>
+  <sys:String x:Key="LOCManageApps">Управление приложениями и играми</sys:String>
+  <sys:String x:Key="LOCNowPlayingCaps">СЕЙЧАС ИГРАЕТСЯ</sys:String>
+  <sys:String x:Key="LOCCurrentlyPlaying">Сейчас играет</sys:String>
+  <sys:String x:Key="LOCNetworkConnectivity">Сетевое подключение</sys:String>
+  <sys:String x:Key="LOCStorage">Хранилище</sys:String>
+  <sys:String x:Key="LOCColorSky">Небесно-синий</sys:String>
+  <sys:String x:Key="LOCColorGreen">Зелёный</sys:String>
+  <sys:String x:Key="LOCColorRed">Красный</sys:String>
+  <sys:String x:Key="LOCColorBlue">Синий</sys:String>
+  <sys:String x:Key="LOCColorYellow">Жёлтый</sys:String>
+  <sys:String x:Key="LOCColorPurple">Фиолетовый</sys:String>
+  <sys:String x:Key="LOCColorPink">Розовый</sys:String>
+  <sys:String x:Key="LOCColorIndigo">Индиго</sys:String>
+  <sys:String x:Key="LOCColorTeal">Бирюзовый</sys:String>
+  <sys:String x:Key="LOCColorCyan">Циановый</sys:String>
+  <sys:String x:Key="LOCColorOrange">Оранжевый</sys:String>
+  <sys:String x:Key="LOCColorAmber">Янтарный</sys:String>
+  <sys:String x:Key="LOCColorLime">Лаймовый</sys:String>
+  <sys:String x:Key="LOCColorEmerald">Изумрудный</sys:String>
+  <sys:String x:Key="LOCColorViolet">Фиолетовый</sys:String>
+  <sys:String x:Key="LOCColorFuchsia">Фуксия</sys:String>
+  <sys:String x:Key="LOCColorRose">Розовый</sys:String>
+  <sys:String x:Key="LOCColorSlate">Сланцевый</sys:String>
+  <sys:String x:Key="LOCColorPlatinum">Платиновый</sys:String>
+  <sys:String x:Key="LOCZoomCovers">Увеличивать обложки игр при фокусе</sys:String>
+  <sys:String x:Key="LOCLevelShort">Уровень</sys:String>
+  <sys:String x:Key="LOCProgressLabel">Прогресс:</sys:String>
+  <sys:String x:Key="LOCLockedLabel">Заблокировано</sys:String>
+  <!-- FrameShift localization -->
+  <sys:String x:Key="LOCFrameShiftName">FrameShift</sys:String>
+  <sys:String x:Key="LOCFrameShiftLanguageName">Русский</sys:String>
+  <sys:String x:Key="LOCFrameShiftFpsMode">Режим FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentMode">Текущий режим: {0} FPS</sys:String>
+  <sys:String x:Key="LOCFrameShiftCurrentModeOff">Текущий режим: ВЫКЛ.</sys:String>
+  <sys:String x:Key="LOCFrameShiftActive">АКТИВНО</sys:String>
+  <sys:String x:Key="LOCFrameShiftOff">ВЫКЛ.</sys:String>
+  <sys:String x:Key="LOCFrameShiftOffDisable">ВЫКЛ. — отключить ограничение</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGameNotFound">Не удалось найти текущую выбранную игру.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExe">Не удалось определить EXE-файл этой игры, поэтому профиль RTSS создать невозможно.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorRtssSave">Не удалось сохранить ограничение RTSS для профиля:</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorBridgeInstall">Убедитесь, что задача "FrameShift RTSS Bridge" установлена.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorGlobal">Не удалось установить ограничение RTSS.</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorInstallHint">Один раз запустите Install-FrameShift.cmd от имени администратора из папки расширения.</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidProfileName">Недопустимое имя профиля RTSS.</sys:String>
+  <sys:String x:Key="LOCFrameShiftGame">Игра</sys:String>
+  <sys:String x:Key="LOCFrameShiftErrorNoExeHint">Откройте Игры → Изменить → Действия игры и убедитесь, что Play action указывает на EXE-файл.</sys:String>
+  <sys:String x:Key="LOCFrameShiftNoBridge">FrameShiftBridge.exe отсутствует в папке расширения Playnite.</sys:String>
+  <sys:String x:Key="LOCFrameShiftBridgeError">RTSSBridge вернул ошибку:</sys:String>
+  <sys:String x:Key="LOCFrameShiftInvalidFps">Недопустимое значение FPS.</sys:String>
+</ResourceDictionary>

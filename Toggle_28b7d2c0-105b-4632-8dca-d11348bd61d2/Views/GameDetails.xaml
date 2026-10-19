@@ -1,0 +1,1488 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pbeh="clr-namespace:Playnite.Behaviors;assembly=Playnite"
+    mc:Ignorable="d">
+
+    <Style x:Key="GameDetailsWindowStyle" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+                    <Border
+                        Margin="24,16"
+                        Background="{DynamicResource ControlBackgroundDarkBrush}"
+                        BorderBrush="{DynamicResource DefaultBorderBrush}"
+                        BorderThickness="1"
+                        CornerRadius="16">
+                        <Grid Margin="32,32,32,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <!--  Game Title  -->
+                            <Grid
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                Margin="0,0,-32,20"
+                                VerticalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <!--  Game Icon  -->
+                                <Image
+                                    Grid.Column="0"
+                                    Width="64"
+                                    Height="64"
+                                    Margin="0,0,32,0"
+                                    VerticalAlignment="Center"
+                                    Source="{Binding SelectedGame.IconObjectCached}"
+                                    Stretch="Uniform" />
+
+                                <!--  Game Title  -->
+                                <TextBlock
+                                    Grid.Column="1"
+                                    VerticalAlignment="Center"
+                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                    FontSize="48"
+                                    Foreground="{DynamicResource TextBrush}"
+                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                    Text="{Binding SelectedGame.DisplayName}"
+                                    TextWrapping="Wrap">
+                                    <TextBlock.Effect>
+                                        <DropShadowEffect
+                                            Opacity="1"
+                                            RenderingBias="Quality"
+                                            ShadowDepth="2"
+                                            Color="Black" />
+                                    </TextBlock.Effect>
+                                </TextBlock>
+
+                                <!--  Vertical Separator  -->
+                                <Border
+                                    Grid.Column="2"
+                                    Width="2"
+                                    Height="48"
+                                    Margin="16,0,16,0"
+                                    VerticalAlignment="Center"
+                                    Background="{DynamicResource TextBrush}"
+                                    Opacity="0.3" />
+
+                                <!--  Developers  -->
+                                <TextBlock
+                                    Grid.Column="3"
+                                    VerticalAlignment="Center"
+                                    FontFamily="{DynamicResource FontDefault}"
+                                    FontSize="44"
+                                    Foreground="{DynamicResource TextBrush}"
+                                    Opacity="0.7"
+                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                    Text="{Binding SelectedGame.Developers, Converter={StaticResource ListToStringConverter}}"
+                                    TextWrapping="Wrap">
+                                    <TextBlock.Effect>
+                                        <DropShadowEffect
+                                            Opacity="1"
+                                            RenderingBias="Quality"
+                                            ShadowDepth="2"
+                                            Color="Black" />
+                                    </TextBlock.Effect>
+                                </TextBlock>
+                            </Grid>
+
+                            <!--  Left side: Description with scroll  -->
+                            <ScrollViewerEx
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Height="928"
+                                Margin="0,0,72,0"
+                                pbeh:FocusBahaviors.FocusBinding="True"
+                                pbeh:FocusBahaviors.OnVisibilityFocus="True"
+                                FocusVisualStyle="{x:Null}"
+                                HorizontalScrollBarVisibility="Disabled"
+                                VerticalScrollBarVisibility="Auto">
+                                <StackPanel Orientation="Vertical">
+                                    <!--  Tags  -->
+                                    <Grid
+                                        Margin="0,24,0,0"
+                                        VerticalAlignment="Center"
+                                        Focusable="False"
+                                        IsEnabled="False"
+                                        IsHitTestVisible="False">
+                                        <Grid.Style>
+                                            <Style TargetType="Grid">
+                                                <Setter Property="Visibility" Value="Visible" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding SelectedGame.Tags.Count}" Value="0">
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Grid.Style>
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="64" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock
+                                            Grid.Column="0"
+                                            Margin="8,0,0,0"
+                                            FontSize="32"
+                                            Opacity="0.75"
+                                            Style="{StaticResource FluentIconStyle}"
+                                            Text="&#xe8ec;" />
+                                        <ItemsControl Grid.Column="1" ItemsSource="{Binding SelectedGame.Tags}">
+                                            <ItemsControl.ItemsPanel>
+                                                <ItemsPanelTemplate>
+                                                    <WrapPanel Orientation="Horizontal" />
+                                                </ItemsPanelTemplate>
+                                            </ItemsControl.ItemsPanel>
+
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Border
+                                                        Margin="0,0,8,4"
+                                                        Padding="12,6"
+                                                        Background="#40808080"
+                                                        CornerRadius="12">
+                                                        <TextBlock
+                                                            VerticalAlignment="Center"
+                                                            FontFamily="{DynamicResource FontDefault}"
+                                                            FontSize="18"
+                                                            Foreground="{DynamicResource TextBrush}"
+                                                            Text="{Binding Name}" />
+                                                    </Border>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </Grid>
+                                    <!--  HLTB  -->
+                                    <Grid Height="48" Margin="0,24,16,64">
+                                        <Grid.Style>
+                                            <Style TargetType="Grid">
+                                                <Setter Property="Visibility" Value="Visible" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=HasDataEmpty}" Value="True">
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{PluginStatus Plugin=playnite-howlongtobeat-plugin, Status=Installed}" Value="False">
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=HasData}" Value="False">
+                                                        <Setter Property="Visibility" Value="Collapsed" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Grid.Style>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="64" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image
+                                            Grid.Column="0"
+                                            Width="48"
+                                            Height="48"
+                                            Margin="0,-32,0,0"
+                                            Opacity="0.75"
+                                            Source="{ThemeFile 'Icons/hltb.png'}" />
+                                        <Grid
+                                            Grid.Column="1"
+                                            Height="48"
+                                            Margin="0">
+                                            <!--  Completionist (Background/Longest)  -->
+                                            <ProgressBar
+                                                Foreground="#4ade80"
+                                                Maximum="{PluginSettings Plugin=HowLongToBeat,
+                                                                         Path=Completionist}"
+                                                Style="{StaticResource LabeledProgressBarStyle}"
+                                                Tag="{PluginSettings Plugin=HowLongToBeat,
+                                                                     Path=CompletionistFormat}"
+                                                Value="{PluginSettings Plugin=HowLongToBeat,
+                                                                       Path=Completionist}" />
+
+                                            <!--  Main + Extra (Middle)  -->
+                                            <ProgressBar
+                                                Background="Transparent"
+                                                Foreground="#818cf8"
+                                                Maximum="{PluginSettings Plugin=HowLongToBeat,
+                                                                         Path=Completionist}"
+                                                Style="{StaticResource LabeledProgressBarStyle}"
+                                                Tag="{PluginSettings Plugin=HowLongToBeat,
+                                                                     Path=MainExtraFormat}"
+                                                Value="{PluginSettings Plugin=HowLongToBeat,
+                                                                       Path=MainExtra}" />
+
+                                            <!--  Main Story (Foreground/Shortest)  -->
+                                            <ProgressBar
+                                                Background="Transparent"
+                                                Foreground="#22d3ee"
+                                                Maximum="{PluginSettings Plugin=HowLongToBeat,
+                                                                         Path=Completionist}"
+                                                Style="{StaticResource LabeledProgressBarStyle}"
+                                                Tag="{PluginSettings Plugin=HowLongToBeat,
+                                                                     Path=MainStoryFormat}"
+                                                Value="{PluginSettings Plugin=HowLongToBeat,
+                                                                       Path=MainStory}" />
+                                            <!--  Your progress  -->
+                                            <ProgressBar
+                                                Margin="0,-32,0,0"
+                                                Foreground="#FFFFFF"
+                                                Maximum="{PluginSettings Plugin=HowLongToBeat,
+                                                                         Path=Completionist}"
+                                                Opacity="0.75"
+                                                Style="{StaticResource CircleProgressBarStyle}"
+                                                Value="{Binding SelectedGame.Playtime, Mode=OneWay}" />
+                                        </Grid>
+                                    </Grid>
+                                    <HtmlTextView
+                                        x:Name="PART_HtmlDescription"
+                                        FocusVisualStyle="{x:Null}"
+                                        HtmlFontSize="32"
+                                        HtmlForeground="{DynamicResource TextColor}"
+                                        HtmlText="{Binding SelectedGame.Description}"
+                                        IsEnabled="False"
+                                        IsHitTestVisible="False"
+                                        LinkForeground="{Binding Source={x:Static SystemParameters.WindowGlassBrush}, Path=Color}" />
+                                </StackPanel>
+
+                            </ScrollViewerEx>
+
+                            <!--  Right side: Game details  -->
+                            <StackPanel
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Width="360"
+                                Orientation="Vertical">
+
+                                <!--  Playtime entry  -->
+                                <StackPanel Margin="0,0,0,48" Orientation="Horizontal">
+                                    <TextBlock
+                                        Margin="0,0,12,0"
+                                        Opacity="0.75"
+                                        Style="{StaticResource FluentIconStyle}"
+                                        Text="&#xe916;" />
+                                    <StackPanel>
+                                        <TextBlock
+                                            FontFamily="{DynamicResource FontDefaultBold}"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{Binding SelectedGame.Playtime, Converter={StaticResource PlayTimeToStringConverter}}" />
+                                        <TextBlock
+                                            FontSize="22"
+                                            Opacity="0.75"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{DynamicResource LOCTimePlayed}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <!--  Last Activity entry  -->
+                                <StackPanel Margin="0,0,0,48" Orientation="Horizontal">
+                                    <TextBlock
+                                        Margin="0,0,12,0"
+                                        Opacity="0.75"
+                                        Style="{StaticResource FluentIconStyle}"
+                                        Text="&#xec92;" />
+                                    <StackPanel>
+                                        <TextBlock
+                                            FontFamily="{DynamicResource FontDefaultBold}"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{Binding SelectedGame.LastActivity, Converter={StaticResource DateTimeToLastPlayedConverter}}" />
+                                        <TextBlock
+                                            FontSize="22"
+                                            Opacity="0.75"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{DynamicResource LOCGameLastActivityTitle}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <!--  Release Year entry  -->
+                                <StackPanel Margin="0,0,0,48" Orientation="Horizontal">
+                                    <TextBlock
+                                        Margin="0,0,12,0"
+                                        Opacity="0.75"
+                                        Style="{StaticResource FluentIconStyle}"
+                                        Text="&#xe787;" />
+                                    <StackPanel>
+                                        <TextBlock
+                                            FontFamily="{DynamicResource FontDefaultBold}"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{Binding SelectedGame.ReleaseYear}" />
+                                        <TextBlock
+                                            FontSize="22"
+                                            Opacity="0.75"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{DynamicResource LOCGameReleaseDateTitle}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <!--  Library entry  -->
+                                <StackPanel Margin="0,0,0,48" Orientation="Horizontal">
+                                    <Image
+                                        Width="60"
+                                        Height="60"
+                                        Margin="0,0,12,0"
+                                        VerticalAlignment="Top"
+                                        Opacity="0.75"
+                                        Source="{ThemeFileBinding SelectedGame.Library,
+                                                                  PathFormat='Icons/Library/{0}.png'}"
+                                        Stretch="UniformToFill" />
+                                    <StackPanel>
+                                        <TextBlock
+                                            FontFamily="{DynamicResource FontDefaultBold}"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{Binding SelectedGame.Library}" />
+                                        <TextBlock
+                                            FontSize="22"
+                                            Opacity="0.75"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{DynamicResource LOCGameProviderTitle}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <!--  Achievement entry  -->
+                                <StackPanel Margin="0,0,0,48" Orientation="Horizontal">
+                                    <StackPanel.Style>
+                                        <Style TargetType="StackPanel">
+                                            <Setter Property="Visibility" Value="Visible" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{PluginSettings Plugin=PlayniteAchievements, Path=HasData}" Value="False">
+                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </StackPanel.Style>
+                                    <TextBlock
+                                        Margin="0,0,12,0"
+                                        Opacity="0.75"
+                                        Style="{StaticResource FluentIconStyle}"
+                                        Text="&#xe734;" />
+                                    <StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock
+                                                FontFamily="{DynamicResource FontDefaultBold}"
+                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                      Path=Unlocked,
+                                                                      FallbackValue='-'}" />
+                                            <TextBlock
+                                                Margin="2,0,2,0"
+                                                FontFamily="{DynamicResource FontDefaultBold}"
+                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                Text="/" />
+                                            <TextBlock
+                                                FontFamily="{DynamicResource FontDefaultBold}"
+                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                      Path=Total,
+                                                                      FallbackValue='-'}" />
+                                            <TextBlock
+                                                Margin="5,0,0,0"
+                                                FontFamily="{DynamicResource FontDefaultBold}"
+                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                      Path=Percent,
+                                                                      FallbackValue='-',
+                                                                      StringFormat='({0}%)'}" />
+                                        </StackPanel>
+                                        <TextBlock
+                                            FontSize="22"
+                                            Opacity="0.75"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{DynamicResource LOCPlayniteAchievementsAchievements}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="GameAchievementsWindow" TargetType="ContentControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ContentControl">
+                    <Border
+                        Margin="24,16"
+                        Background="{DynamicResource ControlBackgroundDarkBrush}"
+                        BorderBrush="{DynamicResource DefaultBorderBrush}"
+                        BorderThickness="1"
+                        CornerRadius="16">
+                        <Grid
+                            Margin="16"
+                            pbeh:FocusBahaviors.FocusBinding="True"
+                            pbeh:FocusBahaviors.OnVisibilityFocus="True">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="640" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Margin="16" Orientation="Vertical">
+                                <TextBlock
+                                    Margin="0,0,0,64"
+                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                    FontSize="48"
+                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                    Text="{Binding SelectedGame.DisplayName}"
+                                    TextWrapping="Wrap" />
+                                <StackPanel Margin="0,0,0,32" Orientation="Horizontal">
+                                    <TextBlock Margin="0,0,12,0">
+                                        <TextBlock.Style>
+                                            <Style BasedOn="{StaticResource FluentIconStyle}" TargetType="TextBlock">
+                                                <Setter Property="Text" Value="&#xe734;" />
+                                                <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{PluginSettings Plugin=PlayniteAchievements, Path=Locked}" Value="0">
+                                                        <Setter Property="Text" Value="&#xe735;" />
+                                                        <Setter Property="Foreground" Value="{DynamicResource UltraRareColor}" />
+                                                        <Setter Property="Effect">
+                                                            <Setter.Value>
+                                                                <DropShadowEffect
+                                                                    BlurRadius="8"
+                                                                    Opacity="0.8"
+                                                                    ShadowDepth="0"
+                                                                    Color="{StaticResource UltraRareGlow}" />
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <StackPanel Margin="0,0,12,0">
+                                        <StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock
+                                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                                    Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                          Path=Unlocked,
+                                                                          FallbackValue='-'}" />
+                                                <TextBlock
+                                                    Margin="2,0,2,0"
+                                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                                    Text="/" />
+                                                <TextBlock
+                                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                                    Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                          Path=Total,
+                                                                          FallbackValue='-'}" />
+                                                <TextBlock
+                                                    Margin="5,0,0,0"
+                                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                                    Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                          Path=Percent,
+                                                                          FallbackValue='-',
+                                                                          StringFormat='({0}%)'}" />
+                                            </StackPanel>
+                                            <TextBlock
+                                                Margin="0,0,0,10"
+                                                FontSize="22"
+                                                Opacity="0.75"
+                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                Text="{DynamicResource LOCPlayniteAchievementsAchievements}" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <!--  Rare Achievements (Gold Star)  -->
+                                <StackPanel Margin="0,0,0,32" Orientation="Horizontal">
+                                    <TextBlock Margin="0,0,12,0" Opacity="0.75">
+                                        <TextBlock.Style>
+                                            <Style BasedOn="{StaticResource FluentIconStyle}" TargetType="TextBlock">
+                                                <Setter Property="Text" Value="&#xe734;" />
+                                                <Setter Property="Foreground" Value="{StaticResource RareColor}" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{PluginSettings Plugin=PlayniteAchievements, Path=Rare.Locked}" Value="0">
+                                                        <Setter Property="Text" Value="&#xe735;" />
+                                                        <Setter Property="Effect">
+                                                            <Setter.Value>
+                                                                <DropShadowEffect
+                                                                    BlurRadius="8"
+                                                                    Opacity="0.8"
+                                                                    ShadowDepth="0"
+                                                                    Color="{StaticResource RareGlow}" />
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <StackPanel Margin="0,0,12,0">
+                                        <StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock
+                                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                                    Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                          Path=Rare.UnLocked,
+                                                                          FallbackValue='-'}" />
+                                                <TextBlock
+                                                    Margin="2,0,2,0"
+                                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                                    Text="/" />
+                                                <TextBlock
+                                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                                    Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                          Path=Rare.Total,
+                                                                          FallbackValue='-'}" />
+                                            </StackPanel>
+                                            <TextBlock
+                                                Margin="0,0,0,10"
+                                                FontSize="22"
+                                                Opacity="0.75"
+                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                Text="{DynamicResource LOCPlayniteAchievementsRare}" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <!--  No Common Achievements (Silver Star)  -->
+                                <StackPanel Margin="0,0,0,32" Orientation="Horizontal">
+                                    <TextBlock Margin="0,0,12,0" Opacity="0.75">
+                                        <TextBlock.Style>
+                                            <Style BasedOn="{StaticResource FluentIconStyle}" TargetType="TextBlock">
+                                                <Setter Property="Text" Value="&#xe734;" />
+                                                <Setter Property="Foreground" Value="{StaticResource NoCommonColor}" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{PluginSettings Plugin=PlayniteAchievements, Path=NoCommon.Locked}" Value="0">
+                                                        <Setter Property="Text" Value="&#xe735;" />
+                                                        <Setter Property="Effect">
+                                                            <Setter.Value>
+                                                                <DropShadowEffect
+                                                                    BlurRadius="8"
+                                                                    Opacity="0.8"
+                                                                    ShadowDepth="0"
+                                                                    Color="{StaticResource NoCommonGlow}" />
+                                                            </Setter.Value>
+                                                        </Setter>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <StackPanel Margin="0,0,12,0">
+                                        <StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock
+                                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                                    Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                          Path=NoCommon.UnLocked,
+                                                                          FallbackValue='-'}" />
+                                                <TextBlock
+                                                    Margin="2,0,2,0"
+                                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                                    Text="/" />
+                                                <TextBlock
+                                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                                    Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                          Path=NoCommon.Total,
+                                                                          FallbackValue='-'}" />
+                                            </StackPanel>
+                                            <TextBlock
+                                                Margin="0,0,0,10"
+                                                FontSize="22"
+                                                Opacity="0.75"
+                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                Text="{DynamicResource LOCPlayniteAchievementsNoCommon}" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <!--  Common Achievements (Bronze Star)  -->
+                                <StackPanel Margin="0,0,0,32" Orientation="Horizontal">
+                                    <TextBlock Margin="0,0,12,0" Opacity="0.75">
+                                        <TextBlock.Style>
+                                            <Style BasedOn="{StaticResource FluentIconStyle}" TargetType="TextBlock">
+                                                <Setter Property="Text" Value="&#xe734;" />
+                                                <Setter Property="Foreground" Value="{StaticResource CommonColor}" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{PluginSettings Plugin=PlayniteAchievements, Path=Common.Locked}" Value="0">
+                                                        <Setter Property="Text" Value="&#xe735;" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                    <StackPanel Margin="0,0,12,0">
+                                        <StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock
+                                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                                    Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                          Path=Common.UnLocked,
+                                                                          FallbackValue='-'}" />
+                                                <TextBlock
+                                                    Margin="2,0,2,0"
+                                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                                    Text="/" />
+                                                <TextBlock
+                                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                                    Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                          Path=Common.Total,
+                                                                          FallbackValue='-'}" />
+                                            </StackPanel>
+                                            <TextBlock
+                                                Margin="0,0,0,10"
+                                                FontSize="22"
+                                                Opacity="0.75"
+                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                Text="{DynamicResource LOCPlayniteAchievementsCommon}" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+
+                            <ListView
+                                x:Name="AchievementList"
+                                Grid.Column="1"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                Background="Transparent"
+                                BorderBrush="{StaticResource DefaultBorderBrush}"
+                                BorderThickness="1,0,0,0"
+                                FocusVisualStyle="{x:Null}"
+                                Focusable="False"
+                                ItemsSource="{PluginSettings Plugin=PlayniteAchievements,
+                                                             Path=ListAchUnlockDateDesc}"
+                                KeyboardNavigation.DirectionalNavigation="Local"
+                                ScrollViewer.CanContentScroll="True"
+                                ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                SelectionMode="Single"
+                                VirtualizingPanel.IsVirtualizing="True"
+                                VirtualizingPanel.VirtualizationMode="Recycling">
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="ListViewItem">
+                                        <Setter Property="Visibility" Value="{Binding IsVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                                        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+                                        <Setter Property="Focusable" Value="True" />
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="ListViewItem">
+                                                    <Grid
+                                                        Width="1080"
+                                                        MinHeight="140"
+                                                        Margin="10"
+                                                        VerticalAlignment="Top">
+                                                        <Border Background="{DynamicResource ControlBackgroundDarkBrush}" CornerRadius="15">
+                                                            <Grid>
+                                                                <Grid.ColumnDefinitions>
+                                                                    <ColumnDefinition Width="Auto" />
+                                                                    <ColumnDefinition Width="*" />
+                                                                </Grid.ColumnDefinitions>
+                                                                <Grid.RowDefinitions>
+                                                                    <RowDefinition Height="Auto" />
+                                                                    <RowDefinition Height="Auto" />
+                                                                </Grid.RowDefinitions>
+
+                                                                <!--  Achievement Image  -->
+                                                                <Image
+                                                                    Grid.RowSpan="2"
+                                                                    Grid.Column="0"
+                                                                    Height="130"
+                                                                    Margin="5,5,0,5"
+                                                                    HorizontalAlignment="Left"
+                                                                    VerticalAlignment="Center"
+                                                                    Source="{Binding Icon}"
+                                                                    Stretch="UniformToFill">
+                                                                    <Image.Style>
+                                                                        <Style TargetType="Image">
+                                                                            <Style.Triggers>
+                                                                                <DataTrigger Binding="{Binding IsUnlock}" Value="False">
+                                                                                    <Setter Property="Opacity" Value="0.5" />
+                                                                                </DataTrigger>
+                                                                            </Style.Triggers>
+                                                                        </Style>
+                                                                    </Image.Style>
+                                                                </Image>
+
+                                                                <Image
+                                                                    Grid.RowSpan="2"
+                                                                    Grid.Column="0"
+                                                                    Height="130"
+                                                                    Margin="5,5,0,5"
+                                                                    HorizontalAlignment="Left"
+                                                                    VerticalAlignment="Center"
+                                                                    Source="{ThemeFile 'Images/locked.png'}"
+                                                                    Stretch="UniformToFill">
+                                                                    <Image.Style>
+                                                                        <Style TargetType="Image">
+                                                                            <Setter Property="Opacity" Value="0.875" />
+                                                                            <Style.Triggers>
+                                                                                <DataTrigger Binding="{Binding IsUnlock}" Value="True">
+                                                                                    <Setter Property="Opacity" Value="0" />
+                                                                                </DataTrigger>
+                                                                            </Style.Triggers>
+                                                                        </Style>
+                                                                    </Image.Style>
+                                                                </Image>
+
+                                                                <!--  Achievement Name  -->
+                                                                <TextBlock
+                                                                    Grid.Row="0"
+                                                                    Grid.Column="1"
+                                                                    Margin="16,13,38,0"
+                                                                    VerticalAlignment="Top"
+                                                                    FontWeight="Bold"
+                                                                    Text="{Binding Name}"
+                                                                    TextTrimming="CharacterEllipsis">
+                                                                    <TextBlock.Style>
+                                                                        <Style BasedOn="{StaticResource TextBlockBaseStyle}" TargetType="TextBlock">
+                                                                            <Style.Triggers>
+                                                                                <MultiDataTrigger>
+                                                                                    <MultiDataTrigger.Conditions>
+                                                                                        <Condition Binding="{Binding IsUnlock}" Value="False" />
+                                                                                        <Condition Binding="{Binding IsHidden}" Value="True" />
+                                                                                    </MultiDataTrigger.Conditions>
+                                                                                    <Setter Property="Effect">
+                                                                                        <Setter.Value>
+                                                                                            <BlurEffect KernelType="Box" Radius="16" />
+                                                                                        </Setter.Value>
+                                                                                    </Setter>
+                                                                                </MultiDataTrigger>
+                                                                            </Style.Triggers>
+                                                                        </Style>
+                                                                    </TextBlock.Style>
+                                                                </TextBlock>
+
+                                                                <!--  Gamerscore - right aligned  -->
+                                                                <StackPanel
+                                                                    Grid.Column="1"
+                                                                    HorizontalAlignment="Right"
+                                                                    VerticalAlignment="Center"
+                                                                    Orientation="Horizontal">
+                                                                    <TextBlock
+                                                                        Margin="0,4,16,0"
+                                                                        FontFamily="Segoe Fluent Icons"
+                                                                        FontSize="24"
+                                                                        Text="&#xe735;">
+                                                                        <TextBlock.Style>
+                                                                            <Style TargetType="TextBlock">
+                                                                                <Setter Property="Foreground" Value="{StaticResource CommonColor}" />
+                                                                                <Style.Triggers>
+                                                                                    <DataTrigger Binding="{Binding GamerScore}" Value="15">
+                                                                                        <Setter Property="Foreground" Value="{StaticResource CommonColor}" />
+                                                                                    </DataTrigger>
+                                                                                    <DataTrigger Binding="{Binding GamerScore}" Value="30">
+                                                                                        <Setter Property="Foreground" Value="{StaticResource NoCommonColor}" />
+                                                                                        <Setter Property="Effect">
+                                                                                            <Setter.Value>
+                                                                                                <DropShadowEffect
+                                                                                                    BlurRadius="8"
+                                                                                                    Opacity="0.8"
+                                                                                                    ShadowDepth="0"
+                                                                                                    Color="{StaticResource NoCommonGlow}" />
+                                                                                            </Setter.Value>
+                                                                                        </Setter>
+                                                                                    </DataTrigger>
+                                                                                    <DataTrigger Binding="{Binding GamerScore}" Value="90">
+                                                                                        <Setter Property="Foreground" Value="{StaticResource RareColor}" />
+                                                                                        <Setter Property="Effect">
+                                                                                            <Setter.Value>
+                                                                                                <DropShadowEffect
+                                                                                                    BlurRadius="8"
+                                                                                                    Opacity="0.8"
+                                                                                                    ShadowDepth="0"
+                                                                                                    Color="{StaticResource RareGlow}" />
+                                                                                            </Setter.Value>
+                                                                                        </Setter>
+                                                                                    </DataTrigger>
+                                                                                </Style.Triggers>
+                                                                            </Style>
+                                                                        </TextBlock.Style>
+                                                                    </TextBlock>
+                                                                </StackPanel>
+
+                                                                <!--  Description and Achievement Stats  -->
+                                                                <Grid
+                                                                    Grid.Row="1"
+                                                                    Grid.Column="1"
+                                                                    Margin="16">
+                                                                    <Grid.ColumnDefinitions>
+                                                                        <ColumnDefinition Width="*" />
+                                                                        <ColumnDefinition Width="Auto" />
+                                                                    </Grid.ColumnDefinitions>
+
+                                                                    <!--  Description/Rarity - left aligned  -->
+                                                                    <StackPanel
+                                                                        Grid.Column="0"
+                                                                        HorizontalAlignment="Left"
+                                                                        VerticalAlignment="Center"
+                                                                        Orientation="Vertical">
+                                                                        <TextBlock
+                                                                            FontSize="24"
+                                                                            Opacity="0.8"
+                                                                            Text="{Binding Description}"
+                                                                            TextTrimming="CharacterEllipsis">
+                                                                            <TextBlock.Style>
+                                                                                <Style BasedOn="{StaticResource TextBlockBaseStyle}" TargetType="TextBlock">
+                                                                                    <Style.Triggers>
+                                                                                        <MultiDataTrigger>
+                                                                                            <MultiDataTrigger.Conditions>
+                                                                                                <Condition Binding="{Binding IsUnlock}" Value="False" />
+                                                                                                <Condition Binding="{Binding IsHidden}" Value="True" />
+                                                                                            </MultiDataTrigger.Conditions>
+                                                                                            <Setter Property="Effect">
+                                                                                                <Setter.Value>
+                                                                                                    <BlurEffect KernelType="Box" Radius="16" />
+                                                                                                </Setter.Value>
+                                                                                            </Setter>
+                                                                                        </MultiDataTrigger>
+                                                                                    </Style.Triggers>
+                                                                                </Style>
+                                                                            </TextBlock.Style>
+                                                                        </TextBlock>
+                                                                        <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
+                                                                            <TextBlock
+                                                                                FontSize="11"
+                                                                                Opacity="0.7"
+                                                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                                                Text="{Binding DateWhenUnlockedString}"
+                                                                                Visibility="{Binding IsUnlock, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                                                                            <TextBlock
+                                                                                FontSize="11"
+                                                                                Opacity="0.7"
+                                                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                                                Text="{DynamicResource LOCLockedLabel}"
+                                                                                Visibility="{Binding IsUnlock, Converter={StaticResource InvertedBooleanToVisibilityConverter}}" />
+                                                                        </StackPanel>
+                                                                    </StackPanel>
+                                                                </Grid>
+                                                                <Border
+                                                                    x:Name="MainBorder"
+                                                                    Grid.RowSpan="2"
+                                                                    Grid.ColumnSpan="2"
+                                                                    Margin="-2"
+                                                                    BorderBrush="{DynamicResource PrimaryBrush}"
+                                                                    BorderThickness="2"
+                                                                    CornerRadius="16"
+                                                                    Visibility="Collapsed" />
+                                                            </Grid>
+                                                        </Border>
+                                                    </Grid>
+                                                    <ControlTemplate.Triggers>
+                                                        <Trigger Property="IsFocused" Value="True">
+                                                            <Setter TargetName="MainBorder" Property="Visibility" Value="Visible" />
+                                                        </Trigger>
+                                                    </ControlTemplate.Triggers>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                            </ListView>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type GameDetails}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type GameDetails}">
+                    <Grid
+                        x:Name="PART_ViewHost"
+                        d:DataContext="{x:Static DesignMainViewModel.DesignSelectedGameIntance}"
+                        d:DesignHeight="{StaticResource DesignHeight}"
+                        d:DesignWidth="{StaticResource DesignWidth}"
+                        Background="{DynamicResource MainBackgourndBrush}"
+                        KeyboardNavigation.ControlTabNavigation="Cycle"
+                        KeyboardNavigation.DirectionalNavigation="Contained"
+                        KeyboardNavigation.TabNavigation="Cycle">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="24" />
+                            <ColumnDefinition Width="480" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="24" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*" />
+                            <RowDefinition Height="4*" />
+                            <RowDefinition Height="24" />
+                        </Grid.RowDefinitions>
+                        <FadeImage
+                            x:Name="PART_ImageBackground"
+                            Grid.RowSpan="3"
+                            Grid.ColumnSpan="5"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top" />
+                        <ContentControl
+                            x:Name="ExtraMetadataLoader_LogoLoaderControl"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2">
+                            <ContentControl.Style>
+                                <Style TargetType="ContentControl">
+                                    <Setter Property="MaxWidth" Value="600" />
+                                    <Setter Property="MaxHeight" Value="250" />
+                                    <Setter Property="Opacity" Value="1" />
+                                    <Setter Property="Margin" Value="32,0,0,32" />
+                                    <Setter Property="HorizontalAlignment" Value="Left" />
+                                    <Setter Property="VerticalAlignment" Value="Bottom" />
+                                </Style>
+                            </ContentControl.Style>
+                        </ContentControl>
+
+                        <Border
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="3"
+                            Background="{DynamicResource GameDetailsBackgroundBrush}"
+                            BorderBrush="{DynamicResource DefaultBorderBrush}"
+                            BorderThickness="1"
+                            CornerRadius="16">
+                            <Border.Effect>
+                                <DropShadowEffect
+                                    BlurRadius="10"
+                                    Direction="315"
+                                    Opacity="0.5"
+                                    ShadowDepth="5"
+                                    Color="Black" />
+                            </Border.Effect>
+                        </Border>
+
+                        <Border
+                            x:Name="Mask"
+                            Grid.Row="1"
+                            Grid.Column="3"
+                            Margin="1"
+                            Background="Black"
+                            CornerRadius="0,15,15,0" />
+
+
+                        <Image
+                            x:Name="PART_ImageCover"
+                            Grid.Row="1"
+                            Grid.Column="3"
+                            Margin="1"
+                            VerticalAlignment="Stretch">
+                            <Image.OpacityMask>
+                                <VisualBrush
+                                    RenderOptions.BitmapScalingMode="Fant"
+                                    Stretch="Fill"
+                                    Visual="{Binding ElementName=Mask}" />
+                            </Image.OpacityMask>
+                        </Image>
+
+                        <Grid
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Margin="32,32,0,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <StackPanel
+                                Grid.Row="0"
+                                Margin="0,0,0,20"
+                                VerticalAlignment="Center"
+                                Orientation="Horizontal">
+                                <StackPanel.Style>
+                                    <Style TargetType="StackPanel">
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{PluginStatus Plugin=ExtraMetadataLoader_705fdbca-e1fc-4004-b839-1d040b8b4429, Status=Installed}" Value="True">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </StackPanel.Style>
+                                <TextBlock
+                                    FontFamily="{DynamicResource FontDefaultBold}"
+                                    FontSize="64"
+                                    Foreground="White"
+                                    Style="{DynamicResource TextBlockBaseStyle}"
+                                    Text="{Binding DisplayName}">
+                                    <TextBlock.Effect>
+                                        <DropShadowEffect
+                                            Opacity="1"
+                                            RenderingBias="Quality"
+                                            ShadowDepth="2"
+                                            Color="Black" />
+                                    </TextBlock.Effect>
+                                </TextBlock>
+                            </StackPanel>
+
+                            <StackPanel
+                                Grid.Row="1"
+                                Margin="0,0,20,20"
+                                Orientation="Horizontal">
+
+                                <!--  Playtime entry  -->
+                                <StackPanel Margin="0,0,48,0" Orientation="Horizontal">
+                                    <StackPanel.Style>
+                                        <Style TargetType="StackPanel">
+                                            <Setter Property="Visibility" Value="Visible" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{PluginSettings Plugin=ThemeOptions, Path=Options[PlayTime]}" Value="False">
+                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </StackPanel.Style>
+                                    <TextBlock
+                                        Margin="0,0,12,0"
+                                        Opacity="0.75"
+                                        Style="{StaticResource FluentIconStyle}"
+                                        Text="&#xe916;" />
+                                    <StackPanel Margin="0,0,12,0">
+                                        <TextBlock
+                                            FontFamily="{DynamicResource FontDefaultBold}"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{Binding Playtime, Converter={StaticResource PlayTimeToStringConverter}}" />
+                                        <TextBlock
+                                            Margin="0,0,0,10"
+                                            FontSize="22"
+                                            Opacity="0.75"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{DynamicResource LOCTimePlayed}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <!--  Last Activity entry  -->
+                                <StackPanel Margin="0,0,48,0" Orientation="Horizontal">
+                                    <StackPanel.Style>
+                                        <Style TargetType="StackPanel">
+                                            <Setter Property="Visibility" Value="Visible" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{PluginSettings Plugin=ThemeOptions, Path=Options[LastPlayed]}" Value="False">
+                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </StackPanel.Style>
+                                    <TextBlock
+                                        Margin="0,0,12,0"
+                                        Opacity="0.75"
+                                        Style="{StaticResource FluentIconStyle}"
+                                        Text="&#xec92;" />
+                                    <StackPanel Margin="0,0,12,0">
+                                        <TextBlock
+                                            FontFamily="{DynamicResource FontDefaultBold}"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{Binding LastActivity, Converter={StaticResource DateTimeToLastPlayedConverter}}" />
+                                        <TextBlock
+                                            Margin="0,0,0,10"
+                                            FontSize="22"
+                                            Opacity="0.75"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{DynamicResource LOCGameLastActivityTitle}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <!--  Release Year entry  -->
+                                <StackPanel Margin="0,0,48,0" Orientation="Horizontal">
+                                    <StackPanel.Style>
+                                        <Style TargetType="StackPanel">
+                                            <Setter Property="Visibility" Value="Visible" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{PluginSettings Plugin=ThemeOptions, Path=Options[ReleaseYear]}" Value="False">
+                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </StackPanel.Style>
+                                    <TextBlock
+                                        Margin="0,0,12,0"
+                                        Opacity="0.75"
+                                        Style="{StaticResource FluentIconStyle}"
+                                        Text="&#xe787;" />
+                                    <StackPanel Margin="0,0,12,0">
+                                        <TextBlock
+                                            FontFamily="{DynamicResource FontDefaultBold}"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{Binding ReleaseYear}" />
+                                        <TextBlock
+                                            Margin="0,0,0,10"
+                                            FontSize="22"
+                                            Opacity="0.75"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{DynamicResource LOCGameReleaseDateTitle}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <!--  Library entry  -->
+                                <StackPanel Margin="0,0,48,0" Orientation="Horizontal">
+                                    <StackPanel.Style>
+                                        <Style TargetType="StackPanel">
+                                            <Setter Property="Visibility" Value="Visible" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{PluginSettings Plugin=ThemeOptions, Path=Options[Library]}" Value="False">
+                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </StackPanel.Style>
+                                    <Image
+                                        Width="60"
+                                        Height="60"
+                                        Margin="0,0,12,0"
+                                        VerticalAlignment="Top"
+                                        Opacity="0.75"
+                                        Source="{ThemeFileBinding Library,
+                                                                  PathFormat='Icons/Library/{0}.png'}"
+                                        Stretch="UniformToFill" />
+                                    <StackPanel Margin="0,0,12,0">
+                                        <TextBlock
+                                            FontFamily="{DynamicResource FontDefaultBold}"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{Binding Library}" />
+                                        <TextBlock
+                                            Margin="0,0,0,10"
+                                            FontSize="22"
+                                            Opacity="0.75"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{DynamicResource LOCGameProviderTitle}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <!--  Achievement entry  -->
+                                <StackPanel Orientation="Horizontal">
+                                    <StackPanel.Style>
+                                        <Style TargetType="StackPanel">
+                                            <Setter Property="Visibility" Value="Visible" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{PluginSettings Plugin=PlayniteAchievements, Path=HasData}" Value="False">
+                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{PluginSettings Plugin=ThemeOptions, Path=Options[Achievements]}" Value="False">
+                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </StackPanel.Style>
+                                    <TextBlock
+                                        Margin="0,0,12,0"
+                                        Opacity="0.75"
+                                        Style="{StaticResource FluentIconStyle}"
+                                        Text="&#xe734;" />
+                                    <StackPanel Margin="0,0,12,0">
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock
+                                                FontFamily="{DynamicResource FontDefaultBold}"
+                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                      Path=Unlocked,
+                                                                      FallbackValue='-'}" />
+                                            <TextBlock
+                                                Margin="2,0,2,0"
+                                                FontFamily="{DynamicResource FontDefaultBold}"
+                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                Text="/" />
+                                            <TextBlock
+                                                FontFamily="{DynamicResource FontDefaultBold}"
+                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                      Path=Total,
+                                                                      FallbackValue='-'}" />
+                                            <TextBlock
+                                                Margin="5,0,0,0"
+                                                FontFamily="{DynamicResource FontDefaultBold}"
+                                                Style="{DynamicResource TextBlockBaseStyle}"
+                                                Text="{PluginSettings Plugin=PlayniteAchievements,
+                                                                      Path=Percent,
+                                                                      FallbackValue='-',
+                                                                      StringFormat='({0}%)'}" />
+                                        </StackPanel>
+                                        <TextBlock
+                                            Margin="0,0,0,10"
+                                            FontSize="22"
+                                            Opacity="0.75"
+                                            Style="{DynamicResource TextBlockBaseStyle}"
+                                            Text="{DynamicResource LOCPlayniteAchievementsAchievements}" />
+                                    </StackPanel>
+                                </StackPanel>
+
+                            </StackPanel>
+
+                            <StackPanel
+                                Grid.Row="2"
+                                Margin="0,0,0,48"
+                                Orientation="Horizontal">
+                                <ButtonEx
+                                    x:Name="PART_ButtonContext"
+                                    MinWidth="220"
+                                    Margin="2"
+                                    HorizontalContentAlignment="Center"
+                                    BorderThickness="2">
+                                    <ButtonEx.Style>
+                                        <Style BasedOn="{StaticResource ButtonBig}" TargetType="ButtonEx">
+                                            <Setter Property="Visibility" Value="Collapsed" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{PluginStatus Plugin=NowPlaying_db4e7ade-57fb-426c-8392-60e2347a0209, Status=Installed}" Value="False">
+                                                    <Setter Property="Visibility" Value="Visible" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </ButtonEx.Style>
+                                </ButtonEx>
+                                <ButtonEx
+                                    Margin="0,2,2,2"
+                                    HorizontalContentAlignment="Center"
+                                    pbeh:FocusBahaviors.FocusBinding="True"
+                                    pbeh:FocusBahaviors.OnVisibilityFocus="True"
+                                    BorderThickness="2"
+                                    Command="{PluginSettings Plugin=NowPlaying,
+                                                             Path=InstallOrPlayOrOpenDialog}">
+                                    <ButtonEx.Style>
+                                        <Style BasedOn="{StaticResource ButtonBig}" TargetType="ButtonEx">
+                                            <Setter Property="Content" Value="{DynamicResource LOCPlayGame}" />
+                                            <Setter Property="MinWidth" Value="220" />
+                                            <Setter Property="Visibility" Value="Visible" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{PluginStatus Plugin=NowPlaying_db4e7ade-57fb-426c-8392-60e2347a0209, Status=Installed}" Value="False">
+                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Game.IsInstalled}" Value="False">
+                                                    <Setter Property="Content" Value="{DynamicResource LOCInstallGame}" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Game.IsInstalling}" Value="True">
+                                                    <Setter Property="Content" Value="{DynamicResource LOCSetupRunning}" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Game.IsLaunching}" Value="True">
+                                                    <Setter Property="Content" Value="{DynamicResource LOCGameLaunching}" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Game.IsRunning}" Value="True">
+                                                    <Setter Property="Content" Value="{DynamicResource LOCGameRunning}" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Game.IsUninstalling}" Value="True">
+                                                    <Setter Property="Content" Value="{DynamicResource LOCUninstalling}" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </ButtonEx.Style>
+                                </ButtonEx>
+                                <ButtonEx
+                                    Margin="32,2,2,2"
+                                    BorderThickness="2"
+                                    Command="{PluginSettings Plugin=PlayniteAchievements,
+                                                             Path=OpenGameAchievementWindow}"
+                                    Content="{DynamicResource LOCPlayniteAchievementsAchievements}">
+                                    <ButtonEx.Style>
+                                        <Style BasedOn="{StaticResource ButtonBig}" TargetType="ButtonEx">
+                                            <Setter Property="Visibility" Value="Visible" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{PluginSettings Plugin=PlayniteAchievements, Path=HasData}" Value="False">
+                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{PluginStatus Plugin=PlayniteAchievementsSantodan, Status=Installed}" Value="False">
+                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </ButtonEx.Style>
+                                </ButtonEx>
+                                <!-- FrameShift: zintegrowany element rozszerzenia -->
+                                <ContentControl
+                                    x:Name="FrameShift_FrameShift"
+                                    Width="220"
+                                    Height="78"
+                                    Margin="32,2,2,2"
+                                    VerticalAlignment="Center"
+                                    VerticalContentAlignment="Center"
+                                    HorizontalContentAlignment="Center" />
+                                <ButtonEx
+                                    x:Name="PART_ButtonOptions"
+                                    Height="78"
+                                    MinWidth="22"
+                                    Margin="32,2,2,2"
+                                    HorizontalContentAlignment="Center"
+                                    BorderThickness="2"
+                                    Style="{DynamicResource ButtonBigRound}">
+                                    <TextBlock
+                                        Width="78"
+                                        Height="73"
+                                        FontSize="48"
+                                        TextAlignment="Center">
+                                        &#x2022;&#x2022;&#x2022;
+                                    </TextBlock>
+                                </ButtonEx>
+                            </StackPanel>
+
+                            <Grid
+                                Grid.Row="3"
+                                Height="48"
+                                Margin="0,0,16,0">
+                                <Grid.Style>
+                                    <Style TargetType="Grid">
+                                        <Setter Property="Visibility" Value="Visible" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=HasDataEmpty}" Value="True">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+                                            </DataTrigger>
+                                            <DataTrigger Binding="{PluginStatus Plugin=playnite-howlongtobeat-plugin, Status=Installed}" Value="False">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+                                            </DataTrigger>
+                                            <DataTrigger Binding="{PluginSettings Plugin=HowLongToBeat, Path=HasData}" Value="False">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+                                            </DataTrigger>
+                                            <DataTrigger Binding="{PluginSettings Plugin=ThemeOptions, Path=Options[HowLongToBeat]}" Value="False">
+                                                <Setter Property="Visibility" Value="Collapsed" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Grid.Style>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="64" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Image
+                                    Grid.Column="0"
+                                    Width="48"
+                                    Height="48"
+                                    Margin="0,-32,0,0"
+                                    Opacity="0.75"
+                                    Source="{ThemeFile 'Icons/hltb.png'}" />
+                                <Grid
+                                    Grid.Column="1"
+                                    Height="48"
+                                    Margin="0">
+                                    <!--  Completionist (Background/Longest)  -->
+                                    <ProgressBar
+                                        Foreground="#4ade80"
+                                        Maximum="{PluginSettings Plugin=HowLongToBeat,
+                                                                 Path=Completionist}"
+                                        Style="{StaticResource LabeledProgressBarStyle}"
+                                        Tag="{PluginSettings Plugin=HowLongToBeat,
+                                                             Path=CompletionistFormat}"
+                                        Value="{PluginSettings Plugin=HowLongToBeat,
+                                                               Path=Completionist}" />
+
+                                    <!--  Main + Extra (Middle)  -->
+                                    <ProgressBar
+                                        Background="Transparent"
+                                        Foreground="#818cf8"
+                                        Maximum="{PluginSettings Plugin=HowLongToBeat,
+                                                                 Path=Completionist}"
+                                        Style="{StaticResource LabeledProgressBarStyle}"
+                                        Tag="{PluginSettings Plugin=HowLongToBeat,
+                                                             Path=MainExtraFormat}"
+                                        Value="{PluginSettings Plugin=HowLongToBeat,
+                                                               Path=MainExtra}" />
+
+                                    <!--  Main Story (Foreground/Shortest)  -->
+                                    <ProgressBar
+                                        Background="Transparent"
+                                        Foreground="#22d3ee"
+                                        Maximum="{PluginSettings Plugin=HowLongToBeat,
+                                                                 Path=Completionist}"
+                                        Style="{StaticResource LabeledProgressBarStyle}"
+                                        Tag="{PluginSettings Plugin=HowLongToBeat,
+                                                             Path=MainStoryFormat}"
+                                        Value="{PluginSettings Plugin=HowLongToBeat,
+                                                               Path=MainStory}" />
+                                    <!--  Your progress  -->
+                                    <ProgressBar
+                                        Margin="0,-32,0,0"
+                                        Foreground="#FFFFFF"
+                                        Maximum="{PluginSettings Plugin=HowLongToBeat,
+                                                                 Path=Completionist}"
+                                        Opacity="0.75"
+                                        Style="{StaticResource CircleProgressBarStyle}"
+                                        Value="{Binding Playtime, Mode=OneWay}" />
+                                </Grid>
+                            </Grid>
+
+                            <Grid
+                                Grid.Row="4"
+                                MaxHeight="330"
+                                Margin="0,16,0,0"
+                                ClipToBounds="True">
+                                <HtmlTextView
+                                    x:Name="PART_HtmlDescription"
+                                    VerticalAlignment="Top"
+                                    Focusable="False"
+                                    HtmlFontSize="32"
+                                    HtmlForeground="{DynamicResource TextColor}"
+                                    IsEnabled="False"
+                                    IsHitTestVisible="False"
+                                    LinkForeground="{DynamicResource PrimaryColor}" />
+                                <Grid.OpacityMask>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Offset="0" Color="White" />
+                                        <GradientStop Offset="0.7" Color="White" />
+                                        <GradientStop Offset="1" Color="Transparent" />
+                                    </LinearGradientBrush>
+                                </Grid.OpacityMask>
+                            </Grid>
+
+                            <ButtonEx
+                                Grid.Row="5"
+                                Margin="8"
+                                HorizontalContentAlignment="Center"
+                                Command="{PluginSettings Plugin=ThemeOptions,
+                                                         Path=OpenWindow[GameDetailsWindowStyle]}"
+                                Style="{DynamicResource ButtonTopMenuR16}"
+                                Tag="{DynamicResource LOCSettingsGameDetailsLabel}">
+                                <TextBlock
+                                    Margin="0,-20,0,-20"
+                                    FontSize="28"
+                                    Foreground="{Binding Foreground, RelativeSource={RelativeSource AncestorType=ButtonEx}}"
+                                    Text="&#x1F783;"
+                                    TextAlignment="Center" />
+                            </ButtonEx>
+                        </Grid>
+                        <ButtonEx
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Height="72"
+                            MinWidth="72"
+                            Margin="24,32,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            pbeh:FocusBahaviors.OnVisibilityFocus="False"
+                            Command="{Binding DataContext.ToggleGameDetailsCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                            Style="{DynamicResource ButtonTopMenu}">
+                            <ButtonEx.Effect>
+                                <DropShadowEffect
+                                    BlurRadius="10"
+                                    Direction="315"
+                                    Opacity="0.75"
+                                    ShadowDepth="0"
+                                    Color="Black" />
+                            </ButtonEx.Effect>
+                            <TextBlock
+                                Height="54"
+                                Margin="6,0,6,6"
+                                VerticalAlignment="Bottom"
+                                FontSize="56"
+                                Style="{StaticResource FluentIconStyle}"
+                                Text="&#xf0b0;" />
+                        </ButtonEx>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
