@@ -10,6 +10,12 @@ Original project: https://github.com/jonosellier/toggle-theme-playnite
 
 This repository is a **Zorinel fork** of the original Toggle theme. The fork keeps the original appearance and core behavior while adding FrameShift integration and localization support.
 
+## Screenshots
+
+| FrameShift button on the game details page | FPS menu |
+|---|---|
+| ![FrameShift button in the Toggle theme](docs/screenshots/toggle-frameshift-button.webp) | ![FrameShift FPS menu in the Toggle theme](docs/screenshots/toggle-fps-menu.webp) |
+
 ## Installation
 
 The GitHub Release provides the theme as a **Playnite `.pthm` package**.
